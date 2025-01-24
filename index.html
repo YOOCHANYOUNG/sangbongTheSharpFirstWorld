@@ -8,6 +8,22 @@
 	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	<style>
+		.fancybox__content img {
+			width: 1200px; /* 동일한 너비로 설정 */
+			height: auto; /* 비율 유지 */
+			max-width: 99%;	/* 반응형 */
+		}
+		/* 대표 이미지에만 클릭 이벤트 적용 */
+		.image-fit {
+			cursor: pointer;
+		}
+
+		.hidden {
+			display: none;
+		}
+	</style>
 </head>
 
 <body id="top">
@@ -50,116 +66,165 @@
 
 				<!-- 대표 이미지 - 사업개요 -->
 				<div class="box">
-					<a href="images/pic01.jpg" class="image fit" data-fancybox="gallery-A" data-caption="대표 이미지">
-						<img src="images/pic01.jpg" alt="대표 이미지" width="600" height="338">
+					<a href="images/gallery-A-0.jpg" class="image fit" data-fancybox="gallery-A" data-caption="대표 이미지">
+						<img src="images/gallery-A-0.jpg" alt="대표 이미지" width="600" height="338" class="image fit" id="imagesimages">
 					</a>
 					<div class="inner">
 						<h3>Project Overview</h3>
 						<p>사 업 개 요</p>
-						<a href="images/pic01.jpg" class="button fit">Watch</a>
+						<!-- <a href="images/pic01.jpg" class="button fit">Watch</a> -->
 					</div>
 				</div>
 
 				<!-- 숨겨진 추가 이미지 -->
-				<div style="visibility: hidden; height: 0; overflow: hidden;">
-					<a href="images/pic02.jpg" data-fancybox="gallery-A" data-caption="추가 이미지 1"></a>
-					<a href="images/pic03.jpg" data-fancybox="gallery-A" data-caption="추가 이미지 2"></a>
-					<a href="images/pic04.jpg" data-fancybox="gallery-A" data-caption="추가 이미지 3"></a>
+				<div style="visibility: hidden; height: 0; overflow: hidden;" class>
+					<a href="images/gallery-A-1.png" data-fancybox="gallery-A" data-caption="사업 개요 (1)"></a>
+					<a href="images/gallery-A-2.png" data-fancybox="gallery-A" data-caption="사업 개요 (2)"></a>
+					<a href="images/gallery-A-3.png" data-fancybox="gallery-A" data-caption="사업 개요 (3)"></a>
+					<a href="images/gallery-A-4.png" data-fancybox="gallery-A" data-caption="사업 개요 (4)"></a>
+					<a href="images/gallery-A-5.png" data-fancybox="gallery-A" data-caption="사업 개요 (5)"></a>
 				</div>
 
 
 				<!-- 대표 이미지 - 입지환경 -->
 				<div class="box">
-					<a href="images/pic05.jpg" class="image fit" data-fancybox="gallery-B" data-caption="대표 이미지">
-						<img src="images/pic05.jpg" alt="대표 이미지" width="600" height="338">
+					<a href="images/gallery-A-0.jpg" class="image fit" data-fancybox="gallery-B" data-caption="대표 이미지">
+						<img src="images/gallery-A-0.jpg" alt="대표 이미지" width="600" height="338" class="image fit" id="imagesimages">
 					</a>
 					<div class="inner">
 						<h3>Location conditions</h3>
 						<p>입 지 환 경</p>
-						<a href="images/pic05.jpg" class="button fit">Watch</a>
+						<!-- <a href="images/pic05.jpg" class="button fit">Watch</a> -->
 					</div>
 				</div>
 
 				<!-- 숨겨진 추가 이미지 -->
 				<div style="visibility: hidden; height: 0; overflow: hidden;">
-					<a href="images/pic06.jpg" data-fancybox="gallery-B" data-caption="추가 이미지 1"></a>
-					<a href="images/pic01.jpg" data-fancybox="gallery-B" data-caption="추가 이미지 2"></a>
-					<a href="images/pic02.jpg" data-fancybox="gallery-B" data-caption="추가 이미지 3"></a>
+					<a href="images/gallery-B-1.png" data-fancybox="gallery-B" data-caption="입지 환경 (1)"></a>
+					<a href="images/gallery-B-2.png" data-fancybox="gallery-B" data-caption="입지 환경 (2)"></a>
+					<a href="images/gallery-B-3.png" data-fancybox="gallery-B" data-caption="입지 환경 (3)"></a>
+					<a href="images/gallery-B-4.png" data-fancybox="gallery-B" data-caption="입지 환경 (4)"></a>
 				</div>
 
 
 				<!-- 대표 이미지 - 배치도 -->
 				<div class="box">
-					<a href="images/pic01.jpg" class="image fit" data-fancybox="gallery-C" data-caption="대표 이미지">
-						<img src="images/pic01.jpg" alt="대표 이미지" width="600" height="338">
+					<a href="images/gallery-A-0.jpg" class="image fit" data-fancybox="gallery-C" data-caption="대표 이미지">
+						<img src="images/gallery-A-0.jpg" alt="대표 이미지" width="600" height="338" class="image fit" id="imagesimages">
 					</a>
 					<div class="inner">
 						<h3>Architectural Blueprint</h3>
 						<p>배 치 도</p>
-						<a href="images/pic01.jpg" class="button fit">Watch</a>
+						<!-- <a href="images/pic01.jpg" class="button fit">Watch</a> -->
 					</div>
 				</div>
 
 				<!-- 숨겨진 추가 이미지 -->
 				<div style="visibility: hidden; height: 0; overflow: hidden;">
-					<a href="images/pic02.jpg" data-fancybox="gallery-C" data-caption="추가 이미지 1"></a>
-					<a href="images/pic03.jpg" data-fancybox="gallery-C" data-caption="추가 이미지 2"></a>
-					<a href="images/pic04.jpg" data-fancybox="gallery-C" data-caption="추가 이미지 3"></a>
+					<a href="images/gallery-C-1.png" data-fancybox="gallery-C" data-caption="배치도 (1)"></a>
+					<a href="images/gallery-C-2.png" data-fancybox="gallery-C" data-caption="배치도 (2)"></a>
 				</div>
 
 
-				<!-- 대표 이미지 - 배치도 -->
+				<!-- 대표 이미지 - 타입안내 -->
 				<div class="box">
-					<a href="images/pic01.jpg" class="image fit" data-fancybox="gallery-D" data-caption="대표 이미지">
-						<img src="images/pic01.jpg" alt="대표 이미지" width="600" height="338">
+					<a href="images/gallery-A-0.jpg" class="image fit" data-fancybox="gallery-D" data-caption="대표 이미지">
+						<img src="images/gallery-A-0.jpg" alt="대표 이미지" width="600" height="338" class="image fit" id="imagesimages">
 					</a>
 					<div class="inner">
 						<h3>Type Information</h3>
 						<p>타 입 안 내</p>
-						<a href="images/pic01.jpg" class="button fit">Watch</a>
+						<!-- <a href="images/pic01.jpg" class="button fit">Watch</a> -->
 					</div>
 				</div>
 
 				<!-- 숨겨진 추가 이미지 -->
 				<div style="visibility: hidden; height: 0; overflow: hidden;">
-					<a href="images/pic02.jpg" data-fancybox="gallery-D" data-caption="추가 이미지 1"></a>
-					<a href="images/pic03.jpg" data-fancybox="gallery-D" data-caption="추가 이미지 2"></a>
-					<a href="images/pic04.jpg" data-fancybox="gallery-D" data-caption="추가 이미지 3"></a>
+					<a href="images/gallery-D-1.png" data-fancybox="gallery-D" data-caption="타입안내 (1)"></a>
+					<a href="images/gallery-D-2.png" data-fancybox="gallery-D" data-caption="타입안내 (2)"></a>
+					<a href="images/gallery-D-3.png" data-fancybox="gallery-D" data-caption="타입안내 (3)"></a>
+					<a href="images/gallery-D-4.png" data-fancybox="gallery-D" data-caption="타입안내 (4)"></a>
+					<a href="images/gallery-D-5.png" data-fancybox="gallery-D" data-caption="타입안내 (5)"></a>
+					<a href="images/gallery-D-6.png" data-fancybox="gallery-D" data-caption="타입안내 (6)"></a>
+					<a href="images/gallery-D-7.png" data-fancybox="gallery-D" data-caption="타입안내 (7)"></a>
+					<a href="images/gallery-D-8.png" data-fancybox="gallery-D" data-caption="타입안내 (8)"></a>
+				</div>
+
+
+				<!-- 대표 이미지 - 상품특화 -->
+				<div class="box">
+					<a href="images/gallery-A-0.jpg" class="image fit" data-fancybox="gallery-E" data-caption="대표 이미지">
+						<img src="images/gallery-A-0.jpg" alt="대표 이미지" width="600" height="338" class="image fit" id="imagesimages">
+					</a>
+					<div class="inner">
+						<h3>Product Specialization</h3>
+						<p>상 품 특 화</p>
+						<!-- <a href="images/pic01.jpg" class="button fit">Watch</a> -->
+					</div>
+				</div>
+
+				<!-- 숨겨진 추가 이미지 -->
+				<div style="visibility: hidden; height: 0; overflow: hidden;">
+					<a href="images/gallery-E-1.png" data-fancybox="gallery-E" data-caption="상품특화 (1)"></a>
+					<a href="images/gallery-E-2.png" data-fancybox="gallery-E" data-caption="상품특화 (2)"></a>
+				</div>
+
+
+				<!-- 대표 이미지 - 상업시설 -->
+				<div class="box">
+					<a href="images/gallery-A-0.jpg" class="image fit" data-fancybox="gallery-F" data-caption="대표 이미지">
+						<img src="images/gallery-A-0.jpg" alt="대표 이미지" width="600" height="338" class="image fit" id="imagesimages">
+					</a>
+					<div class="inner">
+						<h3>Commercial Facilities</h3>
+						<p>상 업 시 설</p>
+						<!-- <a href="images/pic01.jpg" class="button fit">Watch</a> -->
+					</div>
+				</div>
+
+				<!-- 숨겨진 추가 이미지 -->
+				<div style="visibility: hidden; height: 0; overflow: hidden;">
+					<a href="images/gallery-F-1.png" data-fancybox="gallery-F" data-caption="상업시설 (1)"></a>
+					<a href="images/gallery-F-2.png" data-fancybox="gallery-F" data-caption="상업시설 (2)"></a>
 				</div>
 
 			</div>
 		</div>
 	</div>
 
-	<!-- 하단 베너 -->
-	<div id="sideBannerOne">
-		<div>상담신청</div>
+	<!-- 하단 배너 (상담신청) -->
+	<a id="sideBannerOne" href="sms:01063924651?body=상담을%20신청합니다.">
+		<div>상 담 신 청</div>
+	</a>
+
+	<div id="sideBannerTwo"><!-- 광역위치도 --></div>
+
+	<div id="sideBannerThree"> <!-- 사이드메뉴 -->
+		<div class="banner-item" data-image="images/gallery-A-0.jpg">단지내 수영장</div>
+		<div class="banner-item" data-image="images/gallery-A-0.jpg">피트니스</div>
+		<div class="banner-item" data-image="images/gallery-A-0.jpg">골프장</div>
+		<div class="banner-item" data-image="images/gallery-A-0.jpg">키즈카페</div>
+		<div class="banner-item" data-image="images/gallery-A-0.jpg">미디어센터</div>
+	</div>
+	<!-- 이미지 팝업 모달 -->
+	<div id="imageModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="modalImage">
 	</div>
 
-	<div id="sideBannerTwo">
-		<div>광역위치도</div>
-	</div>
-
-	<div id="sideBannerThree">
-		<div>메뉴사이드-1</div>
-		<div>메뉴사이드-2</div>
-		<div>메뉴사이드-3</div>
-		<div>메뉴사이드-4</div>
-		<div>메뉴사이드-5</div>
-	</div>
 
 	<!-- Footer -->
 	<footer id="footer">
 		<div class="inner">
-			<h2>Etiam veroeros lorem</h2>
+			<!-- <h2>Etiam veroeros lorem</h2>
 			<p>Pellentesque eleifend malesuada efficitur. Curabitur volutpat dui mi, ac imperdiet dolor tincidunt nec.
-			</p>
-			<ul class="icons">
+			</p> -->
+			<!-- <ul class="icons">
 				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 				<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 				<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-			</ul>
+			</ul> -->
 		</div>
 	</footer>
 
@@ -171,12 +236,17 @@
 
 	<div id="telAndSms">
 		<div>
-			<a href="sms:01063924651">문자</a>
+			<a href="tel:01063924651" class="tel">
+				<i class="fas fa-phone-alt"></i> 전화
+			</a>
 		</div>
 		<div>
-			<a href="tel:01063924651">전화</a>
+			<a href="sms:01063924651" class="sms">
+				<i class="fas fa-comment-dots"></i> 문자
+			</a>
 		</div>
 	</div>
+
 
 	<!-- Scripts -->
 	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
@@ -195,6 +265,116 @@
 				arrows: true,
 			});
 		});
+
+		document.querySelectorAll('.box a').forEach((link) => {
+			link.addEventListener('click', function (event) {
+				event.preventDefault(); // 기본 동작 방지
+
+				// 클릭된 요소의 data-fancybox 값으로 그룹을 추출
+				const fancyboxGroup = this.getAttribute('data-fancybox');
+
+				// 각 그룹별 세부 이미지 목록을 준비
+				let images = [];
+
+				if (fancyboxGroup === 'gallery-A') {
+					images = [
+						{ src: "images/gallery-A-1.png", caption: "사업개요 (1)" },
+						{ src: "images/gallery-A-2.png", caption: "사업개요 (2)" },
+						{ src: "images/gallery-A-3.png", caption: "사업개요 (3)" },
+						{ src: "images/gallery-A-4.png", caption: "사업개요 (4)" },
+						{ src: "images/gallery-A-5.png", caption: "사업개요 (5)" }
+					];
+				} else if (fancyboxGroup === 'gallery-B') {
+					images = [
+						{ src: "images/gallery-B-1.png", caption: "입지환경 (1)" },
+						{ src: "images/gallery-B-2.png", caption: "입지환경 (2)" },
+						{ src: "images/gallery-B-3.png", caption: "입지환경 (3)" },
+						{ src: "images/gallery-B-4.png", caption: "입지환경 (4)" }
+					];
+				} else if (fancyboxGroup === 'gallery-C') {
+					images = [
+						{ src: "images/gallery-C-1.png", caption: "배치도 (1)" },
+						{ src: "images/gallery-C-2.png", caption: "배치도 (2)" }
+					];
+				} else if (fancyboxGroup === 'gallery-D') {
+					images = [
+						{ src: "images/gallery-D-1.png", caption: "타입안내 (1)" },
+						{ src: "images/gallery-D-2.png", caption: "타입안내 (2)" },
+						{ src: "images/gallery-D-3.png", caption: "타입안내 (3)" },
+						{ src: "images/gallery-D-4.png", caption: "타입안내 (4)" },
+						{ src: "images/gallery-D-5.png", caption: "타입안내 (5)" },
+						{ src: "images/gallery-D-6.png", caption: "타입안내 (6)" },
+						{ src: "images/gallery-D-7.png", caption: "타입안내 (7)" },
+						{ src: "images/gallery-D-8.png", caption: "타입안내 (8)" }
+					];
+				} else if (fancyboxGroup === 'gallery-E') {
+					images = [
+						{ src: "images/gallery-E-1.png", caption: "상품특화 (1)" },
+						{ src: "images/gallery-E-2.png", caption: "상품특화 (2)" }
+					];
+				} else if (fancyboxGroup === 'gallery-F') {
+					images = [
+						{ src: "images/gallery-F-1.png", caption: "상업시설 (1)" },
+						{ src: "images/gallery-F-2.png", caption: "상업시설 (2)" }
+					];
+				}
+
+				// Fancybox로 해당 그룹의 이미지를 띄움
+				Fancybox.show(images);
+			});
+		});
+
+		// 반짝이는 점 생성
+		const createSparkle = () => {
+			const sparkle = document.createElement('div');
+			sparkle.className = 'sparkle';
+
+			// 화면 랜덤 위치 지정
+			sparkle.style.top = Math.random() * 100 + 'vh';
+			sparkle.style.left = Math.random() * 100 + 'vw';
+
+			// 랜덤 크기와 애니메이션 속도
+			const size = Math.random() * 3 + 1; // 1px ~ 4px
+			sparkle.style.width = size + 'px';
+			sparkle.style.height = size + 'px';
+			sparkle.style.animationDuration = Math.random() * 3 + 2 + 's'; // 2초 ~ 5초
+
+			document.body.appendChild(sparkle);
+
+			// 일정 시간 후 제거
+			setTimeout(() => sparkle.remove(), 5000);
+		};
+
+		// 반짝이는 점을 주기적으로 생성
+		setInterval(createSparkle, 200); // 0.2초마다 새로운 점 생성
+
+
+		// 팝업 모달 관련 스크립트
+		const modal = document.getElementById('imageModal');
+		const modalImage = document.getElementById('modalImage');
+		const closeBtn = document.querySelector('.close');
+
+		document.querySelectorAll('.banner-item').forEach(item => {
+			item.addEventListener('click', () => {
+				const imageSrc = item.getAttribute('data-image');
+				if (imageSrc) {
+					modal.style.display = 'flex';
+					modalImage.src = imageSrc;
+				}
+			});
+		});
+
+		closeBtn.addEventListener('click', () => {
+			modal.style.display = 'none';
+		});
+
+		window.addEventListener('click', (e) => {
+			if (e.target === modal) {
+				modal.style.display = 'none';
+			}
+		});
+
+
 	</script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/main.js"></script>
