@@ -1586,6 +1586,7 @@ body.is-loading #banner:before {
 	font-size: 25px;
 	font-weight: bold;
 
+	margin-top: 50px;
 	margin-bottom: -70px;
 }
 
@@ -1960,7 +1961,8 @@ body.is-loading #banner:before {
 	overflow: hidden;
 	position: relative;
 	margin-top: -40px;
-	animation: subtleSparkle 3s infinite alternate; /* 은은한 반짝임 효과 */
+	animation: subtleSparkle 3s infinite alternate;
+	/* 은은한 반짝임 효과 */
 }
 
 /* 내부 텍스트 스타일 */
@@ -1990,10 +1992,12 @@ body.is-loading #banner:before {
 		box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5), inset 0 -2px 6px rgba(255, 255, 255, 0.05);
 		background: linear-gradient(145deg, #272b35, #1d2028);
 	}
+
 	50% {
 		box-shadow: 0 12px 24px rgba(255, 255, 255, 0.15), inset 0 -2px 6px rgba(255, 255, 255, 0.1);
 		background: linear-gradient(145deg, #2a2f3b, #20242f);
 	}
+
 	100% {
 		box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5), inset 0 -2px 6px rgba(255, 255, 255, 0.05);
 		background: linear-gradient(145deg, #272b35, #1d2028);
@@ -2097,6 +2101,7 @@ body.is-loading #banner:before {
 	/* 더 깊은 그림자 */
 	gap: 50px;
 	/* 여유 간격 */
+	margin-top: -22px;
 }
 
 .banner-item {
@@ -2393,7 +2398,186 @@ body {
 
 
 
-#imagesimages{
+#imagesimages {
 	width: 600;
 	height: 338;
+}
+
+
+
+.business-overview {
+	text-align: center;
+	padding: 40px 0;
+	margin-top: -20px;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	/* 3열 그리드 */
+	gap: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.gallery_item {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery_item img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 10px;
+}
+
+.gallery_item a {
+	display: block;
+	text-decoration: none;
+}
+
+.gallery-text {
+	padding: 15px;
+	font-size: 17px;
+	font-weight: bold;
+	color: whitesmoke;
+	text-align: center;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 768px) {
+	.gallery {
+		grid-template-columns: repeat(2, 1fr);
+		/* 2열로 변경 */
+	}
+}
+
+@media (max-width: 480px) {
+	.gallery {
+		grid-template-columns: 1fr;
+		/* 1열로 변경 */
+	}
+}
+
+/* 기존 스타일에 추가 */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: auto;
+    max-height: 100vh;
+    background-color: #333;
+    color: white;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+.side-menu .menu-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.side-menu .menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.side-menu .menu-items li {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.side-menu .menu-items li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.side-menu .menu-items li a:hover {
+    background-color: #555;
+}
+
+/* 메뉴 버튼 - 상단 고정 */
+.menu-button {
+    position: absolute;
+    top: -50px;
+    left: 0; /* 왼쪽에 고정 */
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-button i {
+    font-size: 24px;
+}
+
+/* 메뉴 닫기 버튼 */
+#closeMenu {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* 오버레이 배경 */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+
+#etc_etc {
+    position: absolute;
+    top: -58px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    z-index: 10;
+    width: 150px; /* 전체 너비를 100%로 설정 */
+    text-align: center; /* 중앙 정렬 */
+}
+
+#etc_etc img {
+    width: 100%; /* 이미지 너비를 컨테이너에 맞게 설정 */
+    height: auto; /* 비율에 맞춰 자동으로 높이 조정 */
+    max-height: 200px; /* 최대 높이를 설정하여 이미지가 너무 커지지 않도록 방지 */
+}
+
+/* 반응형 디자인 (모바일) */
+@media (max-width: 768px) {
+    #etc_etc {
+		top: -52px;
+        padding: 10px; /* 여백 줄이기 */
+        max-width: 300px; /* 모바일 화면에서는 최대 너비를 줄임 */
+    }
+
+    #etc_etc img {
+        max-height: 150px; /* 모바일에서는 이미지 최대 높이를 줄여서 표시 */
+    }
+}
+
+@media (max-width: 480px) {
+    #etc_etc {
+		top: -48px;
+        padding: 5px; /* 더 작은 화면에서는 여백을 줄임 */
+        max-width: 250px; /* 더 작은 화면에서는 최대 너비를 줄임 */
+    }
+
+    #etc_etc img {
+        max-height: 120px; /* 작은 화면에서는 이미지 최대 높이를 더 줄임 */
+    }
 }

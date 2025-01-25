@@ -10,28 +10,46 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 	<style>
-		.fancybox__content img {
-			width: 1200px; /* 동일한 너비로 설정 */
-			height: auto; /* 비율 유지 */
-			max-width: 99%;	/* 반응형 */
-		}
-		/* 대표 이미지에만 클릭 이벤트 적용 */
-		.image-fit {
-			cursor: pointer;
-		}
 
-		.hidden {
-			display: none;
-		}
 	</style>
 </head>
 
 <body id="top">
 
+	<!-- 좌측 메뉴바 -->
+	<div id="sideMenu" class="side-menu">
+		<div class="menu-header">
+			<i class="fas fa-times" id="closeMenu"></i>
+		</div>
+		<ul class="menu-items">
+			<li><a href="./index.html"> 메인</a></li>
+			<li><a href="./menuSideOne.html"> 사업개요</a></li>
+			<li><a href="./menuSideTwo.html"> 입지환경</a></li>
+			<li><a href="./menuSideThree.html"> 단지배치도</a></li>
+			<li><a href="./menuSideFour.html"> 세대타입</a></li>
+			<li><a href="./menuSideFive.html"> 상품특화</a></li>
+			<li><a href="./menuSideSix.html"> 개발환경</a></li>
+			<li><a href="./menuSideSeven.html"> 상업시설</a></li>
+		</ul>
+	</div>
+
+	<!-- 메뉴 버튼 -->
+	<div id="menuButton" class="menu-button">
+		<i class="fas fa-bars"></i>
+	</div>
+
+	<!-- 오버레이 배경 (배경 클릭 시 메뉴 닫기) -->
+	<div id="overlay" class="overlay"></div>
+
 	<!-- 상단 베너 -->
 	<div id="topBanner">
 		<div>신내역 1,438세대 대단지 주상복합 전세 • 분양 30세대 한정판매!!</div>
 		<div>아파트 495세대 | 오피스텔 | 상업시설 314실 동시분양</div>
+	</div>
+
+	<!-- 로고 -->
+	<div id="etc_etc">
+		<img src="images/topLogo.png" alt="로고 이미지" />
 	</div>
 
 	<!-- 메인 배너 -->
@@ -64,136 +82,60 @@
 		<div class="inner">
 			<div class="thumbnails">
 
-				<!-- 대표 이미지 - 사업개요 -->
-				<div class="box">
-					<a href="images/gallery-A-0.jpg" class="image fit" data-fancybox="gallery-A" data-caption="대표 이미지">
-						<img src="images/gallery-A-0.jpg" alt="대표 이미지" width="600" height="338" class="image fit" id="imagesimages">
-					</a>
-					<div class="inner">
-						<h3>Project Overview</h3>
-						<p>사 업 개 요</p>
-						<!-- <a href="images/pic01.jpg" class="button fit">Watch</a> -->
+				<div class="business-overview">
+
+					<div class="gallery">
+
+						<div class="gallery_item">
+							<a href="./menuSideOne.html">
+								<img src="./images/gallery-A-0.jpg" alt="사업개요" />
+							</a>
+							<div class="gallery-text">사 업 개 요</div>
+						</div>
+						<div class="gallery_item">
+							<a href="./menuSideTwo.html">
+								<img src="./images/gallery-A-0.jpg" alt="입지환경" />
+							</a>
+							<div class="gallery-text">입 지 환 경</div>
+						</div>
+						<div class="gallery_item">
+							<a href="./menuSideThree.html">
+								<img src="./images/gallery-A-0.jpg" alt="배치도" />
+							</a>
+							<div class="gallery-text">배 치 도</div>
+						</div>
+						<div class="gallery_item">
+							<a href="./menuSideFour.html">
+								<img src="./images/gallery-A-0.jpg" alt="타입안내" />
+							</a>
+							<div class="gallery-text">타 입 안 내</div>
+						</div>
+						<div class="gallery_item">
+							<a href="./menuSideFive.html">
+								<img src="./images/gallery-A-0.jpg" alt="상품특화" />
+							</a>
+							<div class="gallery-text">상 품 특 화</div>
+						</div>
+						<div class="gallery_item">
+							<a href="./menuSideSeven.html">
+								<img src="./images/gallery-A-0.jpg" alt="상업시설" />
+							</a>
+							<div class="gallery-text">상 업 시 설</div>
+						</div>
+						<!-- <div class="gallery_item">
+							<a href="./menuSideOne.html">
+								<img src="./images/gallery-A-0.jpg" alt="상업시설" />
+							</a>
+							<div class="gallery-text">상 업 시 설</div>
+						</div> -->
 					</div>
 				</div>
-
-				<!-- 숨겨진 추가 이미지 -->
-				<div style="visibility: hidden; height: 0; overflow: hidden;" class>
-					<a href="images/gallery-A-1.png" data-fancybox="gallery-A" data-caption="사업 개요 (1)"></a>
-					<a href="images/gallery-A-2.png" data-fancybox="gallery-A" data-caption="사업 개요 (2)"></a>
-					<a href="images/gallery-A-3.png" data-fancybox="gallery-A" data-caption="사업 개요 (3)"></a>
-					<a href="images/gallery-A-4.png" data-fancybox="gallery-A" data-caption="사업 개요 (4)"></a>
-					<a href="images/gallery-A-5.png" data-fancybox="gallery-A" data-caption="사업 개요 (5)"></a>
-				</div>
-
-
-				<!-- 대표 이미지 - 입지환경 -->
-				<div class="box">
-					<a href="images/gallery-A-0.jpg" class="image fit" data-fancybox="gallery-B" data-caption="대표 이미지">
-						<img src="images/gallery-A-0.jpg" alt="대표 이미지" width="600" height="338" class="image fit" id="imagesimages">
-					</a>
-					<div class="inner">
-						<h3>Location conditions</h3>
-						<p>입 지 환 경</p>
-						<!-- <a href="images/pic05.jpg" class="button fit">Watch</a> -->
-					</div>
-				</div>
-
-				<!-- 숨겨진 추가 이미지 -->
-				<div style="visibility: hidden; height: 0; overflow: hidden;">
-					<a href="images/gallery-B-1.png" data-fancybox="gallery-B" data-caption="입지 환경 (1)"></a>
-					<a href="images/gallery-B-2.png" data-fancybox="gallery-B" data-caption="입지 환경 (2)"></a>
-					<a href="images/gallery-B-3.png" data-fancybox="gallery-B" data-caption="입지 환경 (3)"></a>
-					<a href="images/gallery-B-4.png" data-fancybox="gallery-B" data-caption="입지 환경 (4)"></a>
-				</div>
-
-
-				<!-- 대표 이미지 - 배치도 -->
-				<div class="box">
-					<a href="images/gallery-A-0.jpg" class="image fit" data-fancybox="gallery-C" data-caption="대표 이미지">
-						<img src="images/gallery-A-0.jpg" alt="대표 이미지" width="600" height="338" class="image fit" id="imagesimages">
-					</a>
-					<div class="inner">
-						<h3>Architectural Blueprint</h3>
-						<p>배 치 도</p>
-						<!-- <a href="images/pic01.jpg" class="button fit">Watch</a> -->
-					</div>
-				</div>
-
-				<!-- 숨겨진 추가 이미지 -->
-				<div style="visibility: hidden; height: 0; overflow: hidden;">
-					<a href="images/gallery-C-1.png" data-fancybox="gallery-C" data-caption="배치도 (1)"></a>
-					<a href="images/gallery-C-2.png" data-fancybox="gallery-C" data-caption="배치도 (2)"></a>
-				</div>
-
-
-				<!-- 대표 이미지 - 타입안내 -->
-				<div class="box">
-					<a href="images/gallery-A-0.jpg" class="image fit" data-fancybox="gallery-D" data-caption="대표 이미지">
-						<img src="images/gallery-A-0.jpg" alt="대표 이미지" width="600" height="338" class="image fit" id="imagesimages">
-					</a>
-					<div class="inner">
-						<h3>Type Information</h3>
-						<p>타 입 안 내</p>
-						<!-- <a href="images/pic01.jpg" class="button fit">Watch</a> -->
-					</div>
-				</div>
-
-				<!-- 숨겨진 추가 이미지 -->
-				<div style="visibility: hidden; height: 0; overflow: hidden;">
-					<a href="images/gallery-D-1.png" data-fancybox="gallery-D" data-caption="타입안내 (1)"></a>
-					<a href="images/gallery-D-2.png" data-fancybox="gallery-D" data-caption="타입안내 (2)"></a>
-					<a href="images/gallery-D-3.png" data-fancybox="gallery-D" data-caption="타입안내 (3)"></a>
-					<a href="images/gallery-D-4.png" data-fancybox="gallery-D" data-caption="타입안내 (4)"></a>
-					<a href="images/gallery-D-5.png" data-fancybox="gallery-D" data-caption="타입안내 (5)"></a>
-					<a href="images/gallery-D-6.png" data-fancybox="gallery-D" data-caption="타입안내 (6)"></a>
-					<a href="images/gallery-D-7.png" data-fancybox="gallery-D" data-caption="타입안내 (7)"></a>
-					<a href="images/gallery-D-8.png" data-fancybox="gallery-D" data-caption="타입안내 (8)"></a>
-				</div>
-
-
-				<!-- 대표 이미지 - 상품특화 -->
-				<div class="box">
-					<a href="images/gallery-A-0.jpg" class="image fit" data-fancybox="gallery-E" data-caption="대표 이미지">
-						<img src="images/gallery-A-0.jpg" alt="대표 이미지" width="600" height="338" class="image fit" id="imagesimages">
-					</a>
-					<div class="inner">
-						<h3>Product Specialization</h3>
-						<p>상 품 특 화</p>
-						<!-- <a href="images/pic01.jpg" class="button fit">Watch</a> -->
-					</div>
-				</div>
-
-				<!-- 숨겨진 추가 이미지 -->
-				<div style="visibility: hidden; height: 0; overflow: hidden;">
-					<a href="images/gallery-E-1.png" data-fancybox="gallery-E" data-caption="상품특화 (1)"></a>
-					<a href="images/gallery-E-2.png" data-fancybox="gallery-E" data-caption="상품특화 (2)"></a>
-				</div>
-
-
-				<!-- 대표 이미지 - 상업시설 -->
-				<div class="box">
-					<a href="images/gallery-A-0.jpg" class="image fit" data-fancybox="gallery-F" data-caption="대표 이미지">
-						<img src="images/gallery-A-0.jpg" alt="대표 이미지" width="600" height="338" class="image fit" id="imagesimages">
-					</a>
-					<div class="inner">
-						<h3>Commercial Facilities</h3>
-						<p>상 업 시 설</p>
-						<!-- <a href="images/pic01.jpg" class="button fit">Watch</a> -->
-					</div>
-				</div>
-
-				<!-- 숨겨진 추가 이미지 -->
-				<div style="visibility: hidden; height: 0; overflow: hidden;">
-					<a href="images/gallery-F-1.png" data-fancybox="gallery-F" data-caption="상업시설 (1)"></a>
-					<a href="images/gallery-F-2.png" data-fancybox="gallery-F" data-caption="상업시설 (2)"></a>
-				</div>
-
 			</div>
 		</div>
 	</div>
 
 	<!-- 하단 배너 (상담신청) -->
-	<a id="sideBannerOne" href="sms:01063924651?body=상담을%20신청합니다.">
+	<a id="sideBannerOne" href="sms:01063924651?body=상담을%20신청합니다.%20[서울신내역시티프라움]">
 		<div>상 담 신 청</div>
 	</a>
 
@@ -215,23 +157,14 @@
 
 	<!-- Footer -->
 	<footer id="footer">
-		<div class="inner">
-			<!-- <h2>Etiam veroeros lorem</h2>
-			<p>Pellentesque eleifend malesuada efficitur. Curabitur volutpat dui mi, ac imperdiet dolor tincidunt nec.
-			</p> -->
-			<!-- <ul class="icons">
-				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-				<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-			</ul> -->
-		</div>
+		<div class="inner"></div>
 	</footer>
 
 	<div class="copyright">
 		Site made with: <a href="https://templated.co/">Templated</a>.
 		<p>Designed by <a href="https://templated.co/">Templated</a> and released under the Creative Commons License.
 		</p>
+
 	</div>
 
 	<div id="telAndSms">
@@ -251,79 +184,6 @@
 	<!-- Scripts -->
 	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 	<script>
-		document.addEventListener('DOMContentLoaded', () => {
-			Fancybox.bind("[data-fancybox='gallery']", {
-				infinite: true,
-				keyboard: true,
-				Thumbs: {
-					autoStart: true,
-				},
-				touch: {
-					vertical: true,
-					momentum: true,
-				},
-				arrows: true,
-			});
-		});
-
-		document.querySelectorAll('.box a').forEach((link) => {
-			link.addEventListener('click', function (event) {
-				event.preventDefault(); // 기본 동작 방지
-
-				// 클릭된 요소의 data-fancybox 값으로 그룹을 추출
-				const fancyboxGroup = this.getAttribute('data-fancybox');
-
-				// 각 그룹별 세부 이미지 목록을 준비
-				let images = [];
-
-				if (fancyboxGroup === 'gallery-A') {
-					images = [
-						{ src: "images/gallery-A-1.png", caption: "사업개요 (1)" },
-						{ src: "images/gallery-A-2.png", caption: "사업개요 (2)" },
-						{ src: "images/gallery-A-3.png", caption: "사업개요 (3)" },
-						{ src: "images/gallery-A-4.png", caption: "사업개요 (4)" },
-						{ src: "images/gallery-A-5.png", caption: "사업개요 (5)" }
-					];
-				} else if (fancyboxGroup === 'gallery-B') {
-					images = [
-						{ src: "images/gallery-B-1.png", caption: "입지환경 (1)" },
-						{ src: "images/gallery-B-2.png", caption: "입지환경 (2)" },
-						{ src: "images/gallery-B-3.png", caption: "입지환경 (3)" },
-						{ src: "images/gallery-B-4.png", caption: "입지환경 (4)" }
-					];
-				} else if (fancyboxGroup === 'gallery-C') {
-					images = [
-						{ src: "images/gallery-C-1.png", caption: "배치도 (1)" },
-						{ src: "images/gallery-C-2.png", caption: "배치도 (2)" }
-					];
-				} else if (fancyboxGroup === 'gallery-D') {
-					images = [
-						{ src: "images/gallery-D-1.png", caption: "타입안내 (1)" },
-						{ src: "images/gallery-D-2.png", caption: "타입안내 (2)" },
-						{ src: "images/gallery-D-3.png", caption: "타입안내 (3)" },
-						{ src: "images/gallery-D-4.png", caption: "타입안내 (4)" },
-						{ src: "images/gallery-D-5.png", caption: "타입안내 (5)" },
-						{ src: "images/gallery-D-6.png", caption: "타입안내 (6)" },
-						{ src: "images/gallery-D-7.png", caption: "타입안내 (7)" },
-						{ src: "images/gallery-D-8.png", caption: "타입안내 (8)" }
-					];
-				} else if (fancyboxGroup === 'gallery-E') {
-					images = [
-						{ src: "images/gallery-E-1.png", caption: "상품특화 (1)" },
-						{ src: "images/gallery-E-2.png", caption: "상품특화 (2)" }
-					];
-				} else if (fancyboxGroup === 'gallery-F') {
-					images = [
-						{ src: "images/gallery-F-1.png", caption: "상업시설 (1)" },
-						{ src: "images/gallery-F-2.png", caption: "상업시설 (2)" }
-					];
-				}
-
-				// Fancybox로 해당 그룹의 이미지를 띄움
-				Fancybox.show(images);
-			});
-		});
-
 		// 반짝이는 점 생성
 		const createSparkle = () => {
 			const sparkle = document.createElement('div');
@@ -350,30 +210,47 @@
 
 
 		// 팝업 모달 관련 스크립트
-		const modal = document.getElementById('imageModal');
-		const modalImage = document.getElementById('modalImage');
-		const closeBtn = document.querySelector('.close');
+		// const modal = document.getElementById('imageModal');
+		// const modalImage = document.getElementById('modalImage');
+		// const closeBtn = document.querySelector('.close');
 
-		document.querySelectorAll('.banner-item').forEach(item => {
-			item.addEventListener('click', () => {
-				const imageSrc = item.getAttribute('data-image');
-				if (imageSrc) {
-					modal.style.display = 'flex';
-					modalImage.src = imageSrc;
-				}
-			});
+		// document.querySelectorAll('.banner-item').forEach(item => {
+		// 	item.addEventListener('click', () => {
+		// 		const imageSrc = item.getAttribute('data-image');
+		// 		if (imageSrc) {
+		// 			modal.style.display = 'flex';
+		// 			modalImage.src = imageSrc;
+		// 		}
+		// 	});
+		// });
+
+		// closeBtn.addEventListener('click', () => {
+		// 	modal.style.display = 'none';
+		// });
+
+		// window.addEventListener('click', (e) => {
+		// 	if (e.target === modal) {
+		// 		modal.style.display = 'none';
+		// 	}
+		// });
+
+		// 메뉴 아이콘 클릭 시 메뉴 열기
+		document.getElementById("menuButton").addEventListener("click", function () {
+			document.getElementById("sideMenu").style.left = "0"; // 메뉴가 나타나도록
+			document.getElementById("overlay").style.display = "block"; // 오버레이 배경 표시
 		});
 
-		closeBtn.addEventListener('click', () => {
-			modal.style.display = 'none';
+		// 메뉴 닫기 버튼 클릭 시 메뉴 숨기기
+		document.getElementById("closeMenu").addEventListener("click", function () {
+			document.getElementById("sideMenu").style.left = "-250px"; // 메뉴가 숨겨지도록
+			document.getElementById("overlay").style.display = "none"; // 오버레이 배경 숨기기
 		});
 
-		window.addEventListener('click', (e) => {
-			if (e.target === modal) {
-				modal.style.display = 'none';
-			}
+		// 오버레이 배경 클릭 시 메뉴 닫기
+		document.getElementById("overlay").addEventListener("click", function () {
+			document.getElementById("sideMenu").style.left = "-250px"; // 메뉴 숨기기
+			document.getElementById("overlay").style.display = "none"; // 오버레이 배경 숨기기
 		});
-
 
 	</script>
 	<script src="assets/js/jquery.min.js"></script>
