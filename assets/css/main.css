@@ -1966,14 +1966,13 @@ body.is-loading #banner:before {
 	color: #ffffff;
 	background: linear-gradient(145deg, #272b35, #1d2028);
 	border-radius: 15px;
-	border: 2px solid #3b3f4a;
+	border: 2px solid crimson;
 	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5), inset 0 -2px 6px rgba(255, 255, 255, 0.05);
 	text-align: center;
 	overflow: hidden;
 	position: relative;
-	margin-top: -40px;
 	animation: subtleSparkle 3s infinite alternate;
-	/* 은은한 반짝임 효과 */
+	margin-top: 25px;
 }
 
 /* 내부 텍스트 스타일 */
@@ -2422,6 +2421,7 @@ body {
 	text-align: center;
 	padding: 40px 0;
 	margin-top: -30px;
+	margin-bottom: -40px;
 }
 
 .gallery {
@@ -2614,7 +2614,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	padding: 20px;
-	margin-top: -65px;
+	margin-top: -25px;
 
 	/* background-color: rgb(56, 80, 126); */
 }
@@ -2810,7 +2810,7 @@ input[type="tel"] {
 	position: absolute;
 	left: 15px;
 	top: 125px;
-	z-index: 9999;
+	z-index: 1;
 }
 
 #bangmun > img {
