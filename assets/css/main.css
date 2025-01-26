@@ -1961,7 +1961,7 @@ body.is-loading #banner:before {
 	max-width: 1100px;
 	margin: 30px auto;
 	padding: 25px 40px;
-	font-size: 27px;
+	font-size: 35px;
 	font-weight: 700;
 	color: #ffffff;
 	background: linear-gradient(145deg, #272b35, #1d2028);
@@ -2858,4 +2858,6 @@ input[type="tel"] {
 	}
 }
 
-
+#sideBannerOneDiv{
+	font-size: 23px;
+}
