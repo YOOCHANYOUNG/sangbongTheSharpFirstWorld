@@ -2817,40 +2817,45 @@ input[type="tel"] {
 	border-radius: 7px;
 	width: 65px;
 	height: 65px;
+	/* 네온 효과 */
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(0, 204, 255, 0.6);
+	transition: box-shadow 0.3s ease-in-out;
 }
-/* 반응형 스타일: 화면 너비가 768px 이하일 때 */
+
+/* 반응형 스타일: 화면 너비가 1025px 이하일 때 */
 @media (max-width: 1025px) {
 	#bangmun {
 		left: 10px;
 		top: 100px;
 	}
 	#bangmun > img {
-		width: 55px; /* 이미지 크기 조정 */
+		width: 55px;
 		height: 55px;
 	}
 }
-/* 반응형 스타일: 화면 너비가 768px 이하일 때 */
+
+/* 반응형 스타일: 화면 너비가 767px 이하일 때 */
 @media (max-width: 767px) {
 	#bangmun {
 		left: 10px;
 		top: 80px;
 	}
 	#bangmun > img {
-		width: 55px; /* 이미지 크기 조정 */
+		width: 55px;
 		height: 55px;
 	}
 }
-/* 반응형 스타일: 화면 너비가 320px 이하일 때 */
+
+/* 반응형 스타일: 화면 너비가 310px 이하일 때 */
 @media (max-width: 310px) {
 	#bangmun {
 		left: 10px;
 		top: 70px;
 	}
 	#bangmun > img {
-		width: 50px; /* 이미지 크기 조정 */
+		width: 50px;
 		height: 50px;
 	}
 }
-
 
 
