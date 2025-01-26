@@ -1482,7 +1482,7 @@ body.is-loading #banner:before {
 /* Main */
 
 #main {
-	/* background-color: rgb(33, 36, 46); */
+	background-color: rgb(56, 80, 126);
 	padding: 4em 0 2em 0;
 }
 
@@ -1512,8 +1512,8 @@ body.is-loading #banner:before {
 
 #footer {
 	padding: 1em 0 1em 0;
-	/* background-color: #1b1b1f; */
 	text-align: center;
+	background-color: rgb(56, 80, 126);
 }
 
 #footer .inner {
@@ -1546,7 +1546,7 @@ body.is-loading #banner:before {
 }
 
 .copyright {
-	/* background-color: #1b1b1f; */
+	background-color: rgb(56, 80, 126);
 	color: rgba(255, 255, 255, 0.5);
 	font-size: 0.9em;
 	padding: 0.5em 0 0.5em 0;
@@ -1590,9 +1590,10 @@ body.is-loading #banner:before {
 	font-weight: bold;
 
 	margin-top: 50px;
-	margin-bottom: -85px;
+	margin-bottom: -60px;
 
-	background-color: rgb(4, 15, 24);
+	/* background-color: rgb(4, 15, 24); */
+	background-color: rgb(56, 80, 126);
 }
 
 #topBanner> :nth-child(1) {
@@ -1682,8 +1683,10 @@ body.is-loading #banner:before {
 	font-size: 50px;
 	font-weight: bold;
 
-	margin-top: -70px;
+	margin-top: -60px;
 	margin-bottom: -60px;
+
+	background-color: rgb(56, 80, 126);
 }
 
 
@@ -2217,7 +2220,7 @@ body.is-loading #banner:before {
 	padding: 15px;
 	max-width: 500px;
 	margin-top: -30px;
-	/* background: rgb(4, 15, 24); */
+	background: rgb(56, 80, 126);
 }
 
 #telAndSms div {
@@ -2417,7 +2420,7 @@ body {
 .business-overview {
 	text-align: center;
 	padding: 40px 0;
-	margin-top: -20px;
+	margin-top: -30px;
 }
 
 .gallery {
@@ -2610,7 +2613,9 @@ body {
 	flex-direction: column;
 	align-items: center;
 	padding: 20px;
-	margin-top: -20px;
+	margin-top: -65px;
+
+	background-color: rgb(56, 80, 126);
 }
 
 #submitButton {
