@@ -1387,12 +1387,12 @@ button.style3:active,
 }
 
 #banner .more {
-	background-image: url("images/arrow.svg");
+	/* background-image: url("images/arrow.svg"); */
 	background-position: center 1.35em;
 	background-repeat: no-repeat;
 	background-size: auto;
-	border: 1px solid #fff;
-	border-radius: 100%;
+	/* border: 1px solid #fff; */
+	/* border-radius: 100%; */
 	color: rgba(255, 255, 255, 0.75);
 	display: block;
 	height: 4em;
@@ -2859,5 +2859,5 @@ input[type="tel"] {
 }
 
 #sideBannerOneDiv{
-	font-size: 23px;
+	font-size: 22px;
 }
