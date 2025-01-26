@@ -1307,12 +1307,13 @@ button.style3:active,
 	/* padding: 8em 4em 6em 4em; */
 	padding: 5em 2em 3em 2em;
 	min-height: 30vh;
-	background-image: url("../../images/tosido.png");
+	background-image: url("../../images/newLogoTwo.png");
+	/* background-image: url("../../images/tosido.png"); */
 	/* 투시도로 변경 */
-	/* background-color: rgb(33, 36, 46); */
+	/* background-color: rgb(4, 15, 24); */
 	background-position: center;
 	background-size: cover;
-	background-size: 100% 75%;
+	background-size: 100% 72%;
 	background-repeat: no-repeat;
 	border-top: 0;
 	position: relative;
@@ -1351,15 +1352,16 @@ button.style3:active,
 }
 
 #banner p {
-	color: rgba(255, 255, 255, 0.85);
+	/* color: rgba(255, 255, 255, 0.85); */
 	font-size: 1.5em;
-	font-weight: 300;
+	font-weight: bold;
 }
 
 @media screen and (max-width: 980px) {
 
 	#banner p {
 		font-size: 1.5em;
+		font-weight: bold;
 	}
 
 }
@@ -1367,7 +1369,8 @@ button.style3:active,
 @media screen and (max-width: 480px) {
 
 	#banner p {
-		font-size: 1.25em;
+		font-size: 1em;
+		font-weight: bold;
 	}
 
 }
@@ -1552,7 +1555,7 @@ body.is-loading #banner:before {
 }
 
 .copyright a {
-	color: white;
+	color: grey;
 	border-bottom: none;
 	font-weight: 700;
 	text-decoration: none;
@@ -1587,7 +1590,9 @@ body.is-loading #banner:before {
 	font-weight: bold;
 
 	margin-top: 50px;
-	margin-bottom: -70px;
+	margin-bottom: -85px;
+
+	background-color: rgb(4, 15, 24);
 }
 
 #topBanner> :nth-child(1) {
@@ -1632,7 +1637,7 @@ body.is-loading #banner:before {
 	#topBanner {
 		width: auto;
 		height: 75px;
-		font-size: 19px;
+		font-size: 20px;
 	}
 }
 
@@ -1640,7 +1645,7 @@ body.is-loading #banner:before {
 	#topBanner {
 		width: auto;
 		height: 65px;
-		font-size: 14.5px;
+		font-size: 15px;
 	}
 }
 
@@ -1648,7 +1653,7 @@ body.is-loading #banner:before {
 	#topBanner {
 		width: auto;
 		height: 65px;
-		font-size: 12.5px;
+		font-size: 13.5px;
 	}
 }
 
@@ -1656,7 +1661,7 @@ body.is-loading #banner:before {
 	#topBanner {
 		width: auto;
 		height: 65px;
-		font-size: 10.5px;
+		font-size: 11.5px;
 	}
 }
 
@@ -1677,8 +1682,8 @@ body.is-loading #banner:before {
 	font-size: 50px;
 	font-weight: bold;
 
-	margin-bottom: -35px;
-	margin-top: -35px;
+	margin-top: -70px;
+	margin-bottom: -60px;
 }
 
 
@@ -1714,6 +1719,16 @@ body.is-loading #banner:before {
 		margin: 10px 0;
 		/* 상하 여백을 조정 */
 		margin-top: -60px;
+		font-size: 17px;
+	}
+
+	#middleBanner> :nth-child(n) {
+		width: 100%;
+		/* 모바일에서는 전체 너비 사용 */
+		margin: 10px 0;
+		/* 상하 여백을 조정 */
+		margin-top: -60px;
+		font-size: 17px;
 	}
 
 	#middleBanner> :nth-child(1),
@@ -1731,10 +1746,8 @@ body.is-loading #banner:before {
 	#middleBanner> :nth-child(2) {
 		border: 4px solid #d73a49;
 	}
+
 }
-
-
-
 
 
 #middleBanner> :nth-child(2)> :nth-child(1) {
@@ -1858,7 +1871,7 @@ body.is-loading #banner:before {
 		/* 요소가 세로로 정렬되도록 변경 */
 		height: auto;
 		/* 높이를 내용에 맞게 조정 */
-		margin-bottom: -30px;
+		margin-bottom: -50px;
 		/* 모바일 환경에서 간격 조정 */
 		font-size: 14px;
 	}
@@ -1872,14 +1885,13 @@ body.is-loading #banner:before {
 
 	/* 전화번호 글꼴 */
 	#middleBanner> :nth-child(2)> :nth-child(1) {
-		font-size: 14px;
+		font-size: 17.5px;
 		/* 글자 크기를 줄임 */
 	}
 
 	/* 전화번호 글꼴 */
 	#middleBanner> :nth-child(2)> :nth-child(2) {
-		font-size: 20px;
-		/* 글자 크기를 줄임 */
+		font-size: 25px;
 	}
 }
 
@@ -1897,23 +1909,19 @@ body.is-loading #banner:before {
 	/* border: 1px solid red; */
 }
 
-@media (max-width: 320px) {
-
-	#sideBannerOne,
-	#sideBannerTwo,
-	#sideBannerThree {
-		/* margin-top: 15px; */
-	}
-}
-
 @media (max-width: 425px) {
 
-	#sideBannerOne,
-	#sideBannerTwo,
-	#sideBannerThree {
-		/* margin-top: 15px; */
+	#sideBannerTwo {
+		/* width: 120%; */
 	}
 }
+@media (max-width: 320px) {
+
+	#sideBannerTwo {
+		/* width: 120%; */
+	}
+}
+
 
 #sideBannerOne {
 	height: 70px;
@@ -2208,6 +2216,8 @@ body.is-loading #banner:before {
 	margin: 40px auto;
 	padding: 15px;
 	max-width: 500px;
+	margin-top: -30px;
+	/* background: rgb(4, 15, 24); */
 }
 
 #telAndSms div {
@@ -2329,12 +2339,11 @@ body.is-loading #banner:before {
 }
 
 #commentTow {
-	color: #fff;
-	/* 기본 텍스트 색상 흰색 */
+	color: black;
+	font-weight: bold;
 	padding: 10px;
 	font-size: 18px;
 	animation: neonGlowA 3.5s ease-in-out infinite;
-	/* 애니메이션 적용 */
 }
 
 @keyframes neonGlowA {
@@ -2431,7 +2440,7 @@ body {
 	width: 100%;
 	height: auto;
 	display: block;
-	border-radius: 10px;
+	/* border-radius: 10px; */
 }
 
 .gallery_item a {
@@ -2465,119 +2474,330 @@ body {
 
 /* 기존 스타일에 추가 */
 .side-menu {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 200px;
-    height: auto;
-    max-height: 100vh;
-    background-color: #333;
-    color: white;
-    transition: left 0.3s ease;
-    z-index: 999;
+	position: fixed;
+	top: 0;
+	left: -250px;
+	width: 200px;
+	height: auto;
+	max-height: 100vh;
+	background-color: #333;
+	color: white;
+	transition: left 0.3s ease;
+	z-index: 999;
 }
 
 .side-menu .menu-header {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px;
 }
 
 .side-menu .menu-items {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 50px;
+	list-style-type: none;
+	padding: 0;
+	margin-top: 50px;
 }
 
 .side-menu .menu-items li {
-    padding: 15px;
-    border-bottom: 1px solid #444;
+	padding: 15px;
+	border-bottom: 1px solid #444;
 }
 
 .side-menu .menu-items li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	display: block;
 }
 
 .side-menu .menu-items li a:hover {
-    background-color: #555;
+	background-color: #555;
 }
 
 /* 메뉴 버튼 - 상단 고정 */
 .menu-button {
-    position: absolute;
-    top: -50px;
-    left: 0; /* 왼쪽에 고정 */
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 1000;
+	position: absolute;
+	top: -50px;
+	left: 0;
+	/* 왼쪽에 고정 */
+	color: white;
+	padding: 15px;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 1000;
 }
 
 .menu-button i {
-    font-size: 24px;
+	font-size: 24px;
 }
 
 /* 메뉴 닫기 버튼 */
 #closeMenu {
-    font-size: 30px;
-    cursor: pointer;
+	font-size: 30px;
+	cursor: pointer;
 }
 
 /* 오버레이 배경 */
 .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 998;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 998;
 }
 
 
 #etc_etc {
-    position: absolute;
-    top: -58px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 20px;
-    z-index: 10;
-    width: 150px; /* 전체 너비를 100%로 설정 */
-    text-align: center; /* 중앙 정렬 */
+	position: absolute;
+	top: -58px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 20px;
+	z-index: 10;
+	width: 150px;
+	/* 전체 너비를 100%로 설정 */
+	text-align: center;
+	/* 중앙 정렬 */
 }
 
 #etc_etc img {
-    width: 100%; /* 이미지 너비를 컨테이너에 맞게 설정 */
-    height: auto; /* 비율에 맞춰 자동으로 높이 조정 */
-    max-height: 200px; /* 최대 높이를 설정하여 이미지가 너무 커지지 않도록 방지 */
+	width: 100%;
+	/* 이미지 너비를 컨테이너에 맞게 설정 */
+	height: auto;
+	/* 비율에 맞춰 자동으로 높이 조정 */
+	max-height: 200px;
+	/* 최대 높이를 설정하여 이미지가 너무 커지지 않도록 방지 */
 }
 
 /* 반응형 디자인 (모바일) */
 @media (max-width: 768px) {
-    #etc_etc {
+	#etc_etc {
 		top: -52px;
-        padding: 10px; /* 여백 줄이기 */
-        max-width: 300px; /* 모바일 화면에서는 최대 너비를 줄임 */
-    }
+		padding: 10px;
+		/* 여백 줄이기 */
+		max-width: 300px;
+		/* 모바일 화면에서는 최대 너비를 줄임 */
+	}
 
-    #etc_etc img {
-        max-height: 150px; /* 모바일에서는 이미지 최대 높이를 줄여서 표시 */
-    }
+	#etc_etc img {
+		max-height: 150px;
+		/* 모바일에서는 이미지 최대 높이를 줄여서 표시 */
+	}
 }
 
 @media (max-width: 480px) {
-    #etc_etc {
+	#etc_etc {
 		top: -48px;
-        padding: 5px; /* 더 작은 화면에서는 여백을 줄임 */
-        max-width: 250px; /* 더 작은 화면에서는 최대 너비를 줄임 */
-    }
+		padding: 5px;
+		/* 더 작은 화면에서는 여백을 줄임 */
+		max-width: 250px;
+		/* 더 작은 화면에서는 최대 너비를 줄임 */
+	}
 
-    #etc_etc img {
-        max-height: 120px; /* 작은 화면에서는 이미지 최대 높이를 더 줄임 */
+	#etc_etc img {
+		max-height: 120px;
+		/* 작은 화면에서는 이미지 최대 높이를 더 줄임 */
+	}
+}
+
+
+
+#sideBannerContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	margin-top: -20px;
+}
+
+#submitButton {
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	background-color: #013263;
+	padding: 15px 20px;
+	text-decoration: none;
+	border-radius: 10px;
+	margin: 10px 0;
+	cursor: pointer;
+	width: 100%;
+	max-width: 300px;
+	font-weight: bold;
+}
+
+#submitButton:hover {
+	background-color: #0056b3;
+}
+
+#sideBannerTwo {
+	text-align: center;
+	padding: 20px;
+	background-color: #ddd;
+	border-radius: 10px;
+	margin: 10px 0;
+	width: 100%;
+	/* max-width: 300px; */
+}
+
+.form-group {
+	margin-bottom: 15px;
+	width: 100%;
+	max-width: 300px;
+}
+
+label {
+	font-size: 14px;
+	margin-bottom: 5px;
+	display: block;
+}
+
+input[type="text"],
+input[type="tel"] {
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.consent {
+	margin: 0 auto;
+	font-size: 13px;
+}
+
+.consent input[type="checkbox"] {
+	margin-right: 5px;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.modal-content {
+	background: whitesmoke;
+	padding: 20px;
+	border-radius: 10px;
+	width: 90%;
+	max-width: 400px;
+	text-align: center;
+	color: black;
+}
+
+.modal-content h2 {
+	font-weight: bolder;
+	font-size: 18px;
+	margin-bottom: 10px;
+	color: black;
+}
+
+.modal-content p {
+	font-size: 14px;
+	margin-bottom: 20px;
+	color: black;
+}
+
+.modal-close {
+	background: #013263;
+	color: white;
+	padding: 0px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.modal-close:hover {
+	background: #0056b3;
+}
+
+@media (max-width: 768px) {
+
+	#sideBannerOne,
+	#submitButton {
+		font-size: 16px;
+	}
+
+	input[type="text"],
+	input[type="tel"] {
+		font-size: 14px;
+	}
+
+	.modal-content {
+		padding: 15px;
+	}
+
+	.modal-content h2 {
+		font-size: 17px;
+		font-weight: bolder;
+	}
+}
+
+#adBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* 줄바꿈을 허용 */
+    text-align: center;
+    width: 100%; /* 화면 크기에 맞게 */
+    padding: 10px 0;
+    font-size: 14px; /* 기본 글자 크기 */
+    color: rgb(179, 203, 248);
+    margin-bottom: -20px;
+}
+
+#adBanner > div {
+    margin: 0 8px; /* 간격 조정 */
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    animation: subtleGlow 3s infinite alternate; /* 부드러운 애니메이션 */
+}
+
+/* 구분자(|) 색상 변경 */
+#adBanner > div:nth-child(2n) {
+    color: whitesmoke;
+}
+
+/* 부드러운 야광 효과 애니메이션 */
+@keyframes subtleGlow {
+    0% {
+        text-shadow: 0 0 2px #79c3ff, 0 0 4px #79c3ff;
+    }
+    50% {
+        text-shadow: 0 0 3px #79c3ff, 0 0 6px #79c3ff;
+    }
+    100% {
+        text-shadow: 0 0 2px #79c3ff, 0 0 4px #79c3ff;
     }
 }
+
+/* 반응형 스타일 */
+@media (max-width: 480px) {
+    #adBanner {
+        font-size: 12px; /* 작은 화면에서 글자 크기 조정 */
+        padding: 8px 0;
+    }
+    #adBanner > div {
+        margin: 0 2px; /* 간격 축소 */
+    }
+}
+
+@media (max-width: 320px) {
+    #adBanner {
+        font-size: 10px; /* 더 작은 화면에서 글자 크기 조정 */
+    }
+}
+
+
