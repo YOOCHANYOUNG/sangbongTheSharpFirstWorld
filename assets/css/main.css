@@ -2768,7 +2768,7 @@ input[type="tel"] {
     white-space: nowrap; /* 텍스트 줄바꿈 방지 */
     font-family: 'Arial', sans-serif;
     font-weight: bold;
-    animation: subtleGlow 3s infinite alternate; /* 부드러운 애니메이션 */
+    /* animation: subtleGlow 3s infinite alternate; 부드러운 애니메이션 */
 }
 
 /* 구분자(|) 색상 변경 */
