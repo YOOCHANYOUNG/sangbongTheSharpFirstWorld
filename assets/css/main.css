@@ -1597,7 +1597,7 @@ body.is-loading #banner:before {
 
 #topBanner> :nth-child(1) {
 	color: yellow;
-	animation: glowA 3s ease-in-out infinite alternate;
+	/* animation: glowA 3s ease-in-out infinite alternate; */
 }
 
 @keyframes glowA {
@@ -1612,7 +1612,7 @@ body.is-loading #banner:before {
 
 #topBanner> :nth-child(2) {
 	color: white;
-	animation: glowB 3s ease-in-out infinite alternate;
+	/* animation: glowB 3s ease-in-out infinite alternate; */
 }
 
 @keyframes glowB {
