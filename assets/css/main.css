@@ -2792,8 +2792,8 @@ input[type="tel"] {
 /* 반응형 스타일 */
 @media (max-width: 480px) {
     #adBanner {
-        font-size: 12px; /* 작은 화면에서 글자 크기 조정 */
-        padding: 8px 0;
+        font-size: 11px; /* 작은 화면에서 글자 크기 조정 */
+        padding: 7px 0;
     }
     #adBanner > div {
         margin: 0 2px; /* 간격 축소 */
