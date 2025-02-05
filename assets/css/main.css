@@ -563,9 +563,9 @@ textarea:focus {
 
 input[type="text"],
 input[type="password"],
-input[type="email"],
+input[type="tel"],
 select {
-	height: 2.75em;
+	height: 3.7em;
 }
 
 textarea {
@@ -2651,11 +2651,11 @@ body {
 .form-group {
 	margin-bottom: 15px;
 	width: 100%;
-	max-width: 300px;
+	max-width: 500px;
 }
 
 label {
-	font-size: 14px;
+	font-size: 16px;
 	margin-bottom: 5px;
 	display: block;
 }
@@ -2664,7 +2664,7 @@ input[type="text"],
 input[type="tel"] {
 	width: 100%;
 	padding: 10px;
-	font-size: 14px;
+	font-size: 16px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 }
@@ -2859,5 +2859,11 @@ input[type="tel"] {
 }
 
 #sideBannerOneDiv{
-	font-size: 22px;
+	font-size: 21px;
+}
+
+@media (max-width: 320px) {
+	#sideBannerOneDiv {
+		font-size: 18px;
+	}
 }
