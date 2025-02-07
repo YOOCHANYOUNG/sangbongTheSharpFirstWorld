@@ -264,10 +264,10 @@ textarea {
 }
 
 a {
-	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	/* -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; */
+	/* -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; */
+	/* -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; */
+	/* transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; */
 	color: rgba(255, 255, 255, 0.75);
 	text-decoration: none;
 	border-bottom: 1px dotted;
