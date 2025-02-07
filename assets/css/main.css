@@ -1762,7 +1762,7 @@ body.is-loading #banner:before {
 	font-weight: bolder;
 	font-size: 60px;
 	color: red;
-	animation: highlightEffect 3s ease-in-out infinite alternate;
+	/* animation: highlightEffect 3s ease-in-out infinite alternate; */
 }
 
 @keyframes highlightEffect {
