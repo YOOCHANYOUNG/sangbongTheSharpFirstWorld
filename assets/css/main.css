@@ -2292,10 +2292,10 @@ body.is-loading #banner:before {
 
 #sunchaksun {
 	font-weight: bold;
-	background: linear-gradient(45deg, #a9d08e, #8fbc8f, #556b2f);
+	/* background: linear-gradient(45deg, #a9d08e, #8fbc8f, #556b2f); */
 	/* 그라데이션 색상 */
 	background-clip: text;
-	color: transparent;
+	color: greenyellow;
 	/* 글씨 색을 투명하게 하여 그라데이션 효과를 보여줌 */
 	animation: gradientEffect 4s ease-in-out infinite;
 }
