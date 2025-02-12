@@ -5,35 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="naver-site-verification" content="af1e0601a0ef22b8d686b107fc276d253bfd6fec" />
-    <meta name="description" content="서울 신내역 시티프라디움-타입안내">
+    <meta name="description" content="서울 유보라 퍼스트리브-사업개요">
 
-    <meta property="og:type" content="website"> 
-	<meta property="og:title" content="서울 신내역 시티프라디움">
-	<meta property="og:description" content="서울 신내역 시티프라디움">
-	<meta property="og:image" content="https://seoulsinnaestation.netlify.app/./tosido.png">
-	<!-- <meta property="og:image" content="../../images/tosido.png"> -->
-	<meta property="og:url" content="https://seoulsinnaestation.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="서울 유보라 퍼스트리브">
+    <meta property="og:description" content="서울 유보라 퍼스트리브">
+    <meta property="og:image" content="https://seoulsinnaestation.netlify.app/./tosido.png">
+    <meta property="og:url" content="https://seoulsinnaestation.netlify.app/">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <title>서울 신내역 시티프라디움-타입안내</title>
+    <title>서울 유보라 퍼스트리브-타입안내</title>
     <style>
         /* 기본 스타일 설정 */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #111;
+            background-color: #fff;
+            /* 흰색 배경 */
             color: #333;
+            /* 다크한 텍스트 색 */
             display: flex;
             flex-direction: column;
-            min-height: calc(100vh - 80px - 60px); /* 헤더와 푸터의 높이를 제외한 높이를 설정 */
+            min-height: calc(100vh - 80px - 60px);
+            /* 헤더와 푸터 높이 제외 */
         }
 
         /* 헤더 스타일 */
         .header {
             text-align: center;
             padding: 20px;
-            background-color: #222;
-            color: white;
+            background-color: #f8f8f8;
+            /* 연한 회색 톤 */
+            color: #333;
             position: relative;
             height: 80px;
         }
@@ -50,15 +53,15 @@
 
         /* 돌아가기 버튼 */
         .back-button {
-            background-color: #333546;
-            color: white;
-            border: none;
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ccc;
             padding: 10px 20px;
             font-size: 1.1rem;
             font-weight: bolder;
             cursor: pointer;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
             display: inline-block;
             text-align: center;
             margin: 10px 0;
@@ -73,7 +76,8 @@
             align-items: center;
             gap: 20px;
             padding: 20px;
-            background-color: #333;
+            background-color: #fff;
+            /* 흰색 배경 */
             margin: 20px auto;
             max-width: 1200px;
             border-radius: 10px;
@@ -94,8 +98,9 @@
         .footer {
             text-align: center;
             padding: 7.5px 20px;
-            background-color: #222;
-            color: gray;
+            background-color: #f8f8f8;
+            /* 연한 회색 톤 */
+            color: #666;
             margin-top: 20px;
             position: relative;
         }
@@ -156,18 +161,19 @@
             }
         }
 
-        /* 기존 스타일에 추가 */
+        /* 좌측 메뉴바 */
         .side-menu {
             position: fixed;
             top: 0;
             left: -250px;
             width: 200px;
             height: 100%;
-            background-color: #333;
-            color: white;
+            background-color: #fff;
+            /* 흰색 배경 */
+            color: #333;
             transition: left 0.3s ease;
             z-index: 999;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         }
 
         .side-menu .menu-header {
@@ -184,31 +190,29 @@
 
         .side-menu .menu-items li {
             padding: 15px;
-            border-bottom: 1px solid #444;
+            border-bottom: 1px solid #ccc;
         }
 
         .side-menu .menu-items li a {
-            color: white;
+            color: #333;
             text-decoration: none;
             font-size: 18px;
             display: block;
         }
 
         .side-menu .menu-items li a:hover {
-            background-color: #555;
+            background-color: #ddd;
         }
 
         /* 메뉴 버튼 */
         .menu-button {
             position: absolute;
-            top: 2.5px;
-            left: 2.5px;
+            top: 3px;
+            left: 3px;
             color: whitesmoke;
             padding: 12px;
-            border-radius: 50%;
             cursor: pointer;
             z-index: 1000;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
 
         /* 모바일 디자인에서 메뉴 버튼 크기 조정 */
@@ -227,13 +231,14 @@
         }
 
         .menu-button i {
-            color: whitesmoke;
+            color: #333;
         }
 
         /* 메뉴 닫기 버튼 */
         #closeMenu {
             font-size: 30px;
             cursor: pointer;
+            color: #333;
         }
 
         /* 오버레이 배경 */
@@ -248,7 +253,6 @@
             z-index: 998;
         }
     </style>
-
 </head>
 
 <body>
@@ -266,7 +270,6 @@
             <li><a href="./menuSideFour.html"> 세대타입</a></li>
             <li><a href="./menuSideFive.html"> 상품특화</a></li>
             <li><a href="./menuSideSix.html"> 개발환경</a></li>
-            <li><a href="./menuSideSeven.html"> 상업시설</a></li>
         </ul>
     </div>
 
@@ -280,7 +283,7 @@
 
     <!-- 헤더 -->
     <div class="header">
-        <h1>서울 신내역 시티프라디움</h1>
+        <h1>서울 상봉역 유보라 퍼스트리브</h1>
         <h1>[ 타 입 안 내 ]</h1>
     </div>
 
@@ -290,17 +293,12 @@
         <img src="./images/menuSideFour-1.png" alt="타입안내 추가 이미지 1">
         <img src="./images/menuSideFour-2.png" alt="타입안내 추가 이미지 2">
         <img src="./images/menuSideFour-3.png" alt="타입안내 추가 이미지 3">
-        <img src="./images/menuSideFour-4.png" alt="타입안내 추가 이미지 4">
-        <img src="./images/menuSideFour-5.png" alt="타입안내 추가 이미지 5">
-        <img src="./images/menuSideFour-6.png" alt="타입안내 추가 이미지 6">
-        <img src="./images/menuSideFour-7.png" alt="타입안내 추가 이미지 7">
-        <img src="./images/menuSideFour-8.png" alt="타입안내 추가 이미지 8">
     </div>
 
     <!-- 푸터 -->
     <div class="footer">
         <button class="back-button" onclick="window.history.back();">뒤로 가기</button>
-        <p>&copy; 2025 서울 신내역 시티프라디움. All Rights Reserved.</p>
+        <p>&copy; 서울 상봉역 유보라 퍼스트리브. All Rights Reserved.</p>
     </div>
 
     <script>

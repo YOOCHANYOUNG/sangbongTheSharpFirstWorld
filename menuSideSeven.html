@@ -5,35 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="naver-site-verification" content="af1e0601a0ef22b8d686b107fc276d253bfd6fec" />
-    <meta name="description" content="서울 신내역 시티프라디움-상업시설">
+    <meta name="description" content="서울 유보라 퍼스트리브-사업개요">
 
-    <meta property="og:type" content="website"> 
-	<meta property="og:title" content="서울 신내역 시티프라디움">
-	<meta property="og:description" content="서울 신내역 시티프라디움">
-	<meta property="og:image" content="https://seoulsinnaestation.netlify.app/./tosido.png">
-	<!-- <meta property="og:image" content="../../images/tosido.png"> -->
-	<meta property="og:url" content="https://seoulsinnaestation.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="서울 유보라 퍼스트리브">
+    <meta property="og:description" content="서울 유보라 퍼스트리브">
+    <meta property="og:image" content="https://seoulsinnaestation.netlify.app/./tosido.png">
+    <meta property="og:url" content="https://seoulsinnaestation.netlify.app/">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <title>서울 신내역 시티프라디움-상업시설</title>
+    <title>서울 유보라 퍼스트리브-관심고객등록</title>
     <style>
         /* 기본 스타일 설정 */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #111;
+            background-color: #fff;
+            /* 흰색 배경 */
             color: #333;
+            /* 다크한 텍스트 색 */
             display: flex;
             flex-direction: column;
-            min-height: calc(100vh - 80px - 60px); /* 헤더와 푸터의 높이를 제외한 높이를 설정 */
+            min-height: calc(100vh - 80px - 60px);
+            /* 헤더와 푸터 높이 제외 */
         }
 
         /* 헤더 스타일 */
         .header {
             text-align: center;
             padding: 20px;
-            background-color: #222;
-            color: white;
+            background-color: #f8f8f8;
+            /* 연한 회색 톤 */
+            color: #333;
             position: relative;
             height: 80px;
         }
@@ -50,15 +53,15 @@
 
         /* 돌아가기 버튼 */
         .back-button {
-            background-color: #333546;
-            color: white;
-            border: none;
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ccc;
             padding: 10px 20px;
             font-size: 1.1rem;
             font-weight: bolder;
             cursor: pointer;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
             display: inline-block;
             text-align: center;
             margin: 10px 0;
@@ -73,7 +76,8 @@
             align-items: center;
             gap: 20px;
             padding: 20px;
-            background-color: #333;
+            background-color: #fff;
+            /* 흰색 배경 */
             margin: 20px auto;
             max-width: 1200px;
             border-radius: 10px;
@@ -94,9 +98,10 @@
         .footer {
             text-align: center;
             padding: 7.5px 20px;
-            background-color: #222;
-            color: gray;
-            margin-top: 20px;
+            background-color: #f8f8f8;
+            /* 연한 회색 톤 */
+            color: #666;
+            margin-top: 5px;
             position: relative;
         }
 
@@ -156,18 +161,19 @@
             }
         }
 
-        /* 기존 스타일에 추가 */
+        /* 좌측 메뉴바 */
         .side-menu {
             position: fixed;
             top: 0;
             left: -250px;
             width: 200px;
             height: 100%;
-            background-color: #333;
-            color: white;
+            background-color: #fff;
+            /* 흰색 배경 */
+            color: #333;
             transition: left 0.3s ease;
             z-index: 999;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         }
 
         .side-menu .menu-header {
@@ -184,31 +190,29 @@
 
         .side-menu .menu-items li {
             padding: 15px;
-            border-bottom: 1px solid #444;
+            border-bottom: 1px solid #ccc;
         }
 
         .side-menu .menu-items li a {
-            color: white;
+            color: #333;
             text-decoration: none;
             font-size: 18px;
             display: block;
         }
 
         .side-menu .menu-items li a:hover {
-            background-color: #555;
+            background-color: #ddd;
         }
 
         /* 메뉴 버튼 */
         .menu-button {
             position: absolute;
-            top: 2.5px;
-            left: 2.5px;
+            top: 3px;
+            left: 3px;
             color: whitesmoke;
             padding: 12px;
-            border-radius: 50%;
             cursor: pointer;
             z-index: 1000;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
 
         /* 모바일 디자인에서 메뉴 버튼 크기 조정 */
@@ -227,13 +231,14 @@
         }
 
         .menu-button i {
-            color: whitesmoke;
+            color: #333;
         }
 
         /* 메뉴 닫기 버튼 */
         #closeMenu {
             font-size: 30px;
             cursor: pointer;
+            color: #333;
         }
 
         /* 오버레이 배경 */
@@ -246,6 +251,82 @@
             height: 100%;
             background-color: rgba(0, 0, 0, 0.5);
             z-index: 998;
+        }
+
+        /* .register-container{
+            width: auto;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        } */
+        /* 기본 폼 스타일 */
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        .form-group input {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .consent {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        .consent input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .consent a {
+            color: #007bff;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+
+        .consent a:hover {
+            text-decoration: underline;
+        }
+
+        /* 등록 버튼 스타일 */
+        #submitButton {
+            text-align: center;
+            background-color: #28a745;
+            color: #fff;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        #submitButton:hover {
+            background-color: #218838;
+        }
+
+        /* 간단한 레이아웃 */
+        .register-container {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -265,7 +346,6 @@
             <li><a href="./menuSideFour.html"> 세대타입</a></li>
             <li><a href="./menuSideFive.html"> 상품특화</a></li>
             <li><a href="./menuSideSix.html"> 개발환경</a></li>
-            <li><a href="./menuSideSeven.html"> 상업시설</a></li>
         </ul>
     </div>
 
@@ -279,33 +359,69 @@
 
     <!-- 헤더 -->
     <div class="header">
-        <h1>서울 신내역 시티프라디움</h1>
-        <h1>[ 상 업 시 설 ]</h1>
+        <h1>서울 상봉역 유보라 퍼스트리브</h1>
+        <h1>[ 관 심 고 객 등 록 ]</h1>
     </div>
 
-    <!-- 갤러리 -->
-    <div class="gallery">
-        <!-- 추가 이미지들 -->
-        <img src="./images/menuSideSeven-1.png" alt="상업시설 추가 이미지 1">
-        <img src="./images/menuSideSeven-12.png" alt="상업시설 추가 이미지 2">
-        <img src="./images/menuSideSeven-13.png" alt="상업시설 추가 이미지 3">
-        <img src="./images/menuSideSeven-4.png" alt="상업시설 추가 이미지 4">
-        <img src="./images/menuSideSeven-5.png" alt="상업시설 추가 이미지 5">
-        <img src="./images/menuSideSeven-6.png" alt="상업시설 추가 이미지 6">
-        <img src="./images/menuSideSeven-7.png" alt="상업시설 추가 이미지 7">
-        <img src="./images/menuSideSeven-8.png" alt="상업시설 추가 이미지 8">
-        <img src="./images/menuSideSeven-9.png" alt="상업시설 추가 이미지 9">
-        <img src="./images/menuSideSeven-10.png" alt="상업시설 추가 이미지 10">
-        <img src="./images/menuSideSeven-11.png" alt="상업시설 추가 이미지 11">
+    <div class="register-container">
+        <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" placeholder="고객님의 이름을 입력하세요">
+        </div>
+        <div class="form-group">
+            <label for="phone">연락처</label>
+            <input type="tel" id="phone" placeholder="연락처를 입력하세요">
+        </div>
+        <div class="consent">
+            <input type="checkbox" id="agree">
+            <label for="agree">
+                개인정보 수집 및 사용 동의
+                <a href="#" id="viewDetails">[자세히보기]</a>
+            </label>
+        </div>
+        <div id="submitButton">등록하기</div>
     </div>
 
     <!-- 푸터 -->
     <div class="footer">
         <button class="back-button" onclick="window.history.back();">뒤로 가기</button>
-        <p>&copy; 2025 서울 신내역 시티프라디움. All Rights Reserved.</p>
+        <p>&copy; 서울 상봉역 유보라 퍼스트리브. All Rights Reserved.</p>
     </div>
 
     <script>
+        document.getElementById('submitButton').addEventListener('click', function () {
+            // 동의 여부 확인
+            if (!document.getElementById('agree').checked) {
+                alert('개인정보 수집 및 사용에 동의하셔야 합니다.');
+                return;
+            }
+
+            // 입력값 가져오기
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+
+            // 필수 입력값 확인
+            if (!name || !phone) {
+                alert('이름과 연락처를 모두 입력해주세요.');
+                return;
+            }
+
+            // SMS 링크 생성 및 이동
+            const smsLink = `sms:01052054651?body=상담을%20신청합니다.%20[이름:%20${encodeURIComponent(name)}%20연락처:%20${encodeURIComponent(phone)}]`;
+            window.location.href = smsLink;
+
+            // 만약 백엔드 연동 없이 데모를 위해 단순 알림을 원한다면 아래처럼 주석 처리 후 사용:
+            // setTimeout(function () {
+            //     alert('등록이 완료되었습니다. 확인 문자가 전송되었습니다.');
+            // }, 1000);
+        });
+
+        // [자세히보기] 링크를 클릭하면 개인정보 수집 및 사용에 대한 상세 정보를 보여줄 수 있음
+        document.getElementById('viewDetails').addEventListener('click', function (e) {
+            e.preventDefault();
+            alert('※개인정보 수집 및 사용※\n고객님의 개인정보는 상담 신청을 위해 사용되며,\n다른 용도로는 사용되지 않습니다.');
+        });
+
         // 메뉴 열기
         document.getElementById("menuButton").addEventListener("click", function () {
             document.getElementById("sideMenu").style.left = "0";
