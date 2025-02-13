@@ -303,6 +303,19 @@
 			}
 		});
 
+		// 모든 gallery_item 요소에 대해 처리
+		document.querySelectorAll('.gallery_item').forEach(function (item) {
+			// 해당 아이템 안의 <a> 태그에서 href 값을 가져옴
+			var link = item.querySelector('a').getAttribute('href');
+			var textEl = item.querySelector('.gallery-text');
+
+			// 텍스트 영역에 클릭 이벤트 추가
+			textEl.style.cursor = 'pointer'; // 클릭 가능한 영역임을 표시
+			textEl.addEventListener('click', function () {
+				window.location.href = link;
+			});
+		});
+
 	</script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/main.js"></script>
