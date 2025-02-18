@@ -1,324 +1,193 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>서울 유보라 퍼스트리브</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 	<meta name="naver-site-verification" content="af1e0601a0ef22b8d686b107fc276d253bfd6fec" />
-	<meta name="description" content="서울 유보라 퍼스트리브">
+	<meta name="description" content="덕계역 한신더휴 포레스트">
 
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="서울 유보라 퍼스트리브">
-	<meta property="og:description" content="서울 유보라 퍼스트리브">
-	<meta property="og:image" content="https://sangbongstation.netlify.app/mainImage.png">
-	<meta property="og:url" content="https://sangbongstation.netlify.app/">
+	<meta property="og:title" content="덕계역 한신더휴 포레스트">
+	<meta property="og:description" content="덕계역 한신더휴 포레스트">
+	<!-- <meta property="og:image" content="https://sangbongstation.netlify.app/mainImage.png"> -->
+	<!-- <meta property="og:url" content="https://sangbongstation.netlify.app/"> -->
 
-	<link rel="stylesheet" href="assets/css/main.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
+	<link rel="stylesheet" href="./assets/css/main.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-	<style>
 
-	</style>
+	<title>덕계역 한신더휴 포레스트</title>
 </head>
 
-<body id="top">
-
-	<!-- 좌측 메뉴바 -->
-	<div id="sideMenu" class="side-menu">
-		<div class="menu-header">
-			<i class="fas fa-times" id="closeMenu"></i>
+<body class="container">
+	
+	<!-- 상단 로고 영역 -->
+	<div class="top_logo">
+		<div>
+			<img src="./images/top_logo.png" alt="로고" id="logoImage">
 		</div>
-		<ul class="menu-items">
-			<li><a href="./menuSideOne.html"> 사업개요</a></li>
-			<li><a href="./menuSideTwo.html"> 입지환경</a></li>
-			<li><a href="./menuSideThree.html"> 단지배치도</a></li>
-			<li><a href="./menuSideFour.html"> 세대타입</a></li>
-			<li><a href="./menuSideFive.html"> 상품특화</a></li>
-			<li><a href="./menuSideSix.html"> 개발환경</a></li>
-		</ul>
+		<!-- 사이드메뉴 버튼 영역 -->
+		<div id="sideMenuArea">
+			<div id="sideMenuIcon">≣</div>
+		</div>
 	</div>
 
-	<!-- 메뉴 버튼 -->
-	<div id="menuButton" class="menu-button">
-		<i class="fas fa-bars"></i>
+	<!-- 사이드메뉴 -->
+	<div id="sideMenu" class="side-menu">
+		<div class="side-menu-content">
+			<ul>
+				<li><a href="./index.html">홈</a></li>
+				<li><a href="./menuSide1.html">사업개요</a></li>
+				<li><a href="./menuSide2.html">입지환경</a></li>
+				<li><a href="./menuSide3.html">배치도</a></li>
+				<li><a href="./menuSide4.html">타입안내</a></li>
+				<li><a href="./menuSide5.html">상품특화</a></li>
+				<li><a href="./menuSide6.html">개발환경</a></li>
+			</ul>
+		</div>
 	</div>
 
-	<!-- 오버레이 배경 (배경 클릭 시 메뉴 닫기) -->
+	<!-- 배경 클릭 시 메뉴 닫기 -->
 	<div id="overlay" class="overlay"></div>
 
-	<!-- 상단 베너 -->
-	<div id="topBanner">
-		<div>상봉역(7호선) 쿼드러플 몰세권 196세대 특별분양!!</div>
-		<div>코스트코 | 홈플러스 | 엔터식스 | GTX-B노선(예정)</div>
-	</div>
 
-	<!-- 로고 -->
-	<div id="etc_etc">
-		<img src="images/topLogoUpdate.png" alt="로고 이미지" />
-	</div>
-
-	<div id="bangmun">
-		<img src="./images/bangmun-2.png" alt="방문예약">
-	</div>
-
-	<!-- 메인 배너 -->
-	<div id="newLogo"></div>
-	<section id="banner" data-video="images/banner"></section>
-
-	<!-- 중간 베너 -->
-	<div id="middleBanner">
+	<!-- 상단 문구 영역 -->
+	<div class="top_ment">
+		<div>양주신도시 프리미엄을 모두 누리는 특별한 자리!</div>
 		<div>
-			<div id="sunchaksun">선착순 파격조건 분양중!</div>
-			<div>서울 7호선 상봉역 초역세권 입지!</div>
+			<img src="./images/top_ment_img1.png" alt="종로엠스쿨"> 
+			<img src="./images/top_ment_img2.png" alt="덕계역">
+			<img src="./images/top_ment_img3.png" alt="GTX-C 덕정역(계획)">
+			<img src="./images/top_ment_img4.png" alt="리치마트">
+		</div>
+	</div>
+
+	<!-- 투시도(메인이미지) 영역 -->
+	 <div class="main_img">
+		<div>
+			<img src="./images/main_img_main.png" alt="메인">
 		</div>
 		<div>
-			<div id="jubsu">모델하우스 실시간 방문예약 접수!</div>
-			<div>
-				<a href="tel:15332042" style="text-decoration: none; color: green;">
-					1 5 3 3 - 2 0 4 2
-				</a>
+			<img src="./images/bangmun-1.png" alt="방문예약">
+		</div>
+	 </div>
+
+	<!-- 메인 문구 영역 -->
+	<div class="main_ment">
+		<div>
+			<div>선착순 파격조건 분양중!</div>
+			<div>중도금 무이자 및 입주까지 <span>천만원</span>으로 내 집 장만!</div>
+		</div>
+		<div id="call1">
+			<div>모델하우스 실시간 방문예약 접수!</div>
+			<div>1 5 3 3 - 2 0 4 2</div>
+		</div>
+	</div>
+
+	<!-- 메인 메뉴 영역 -->
+	<div class="main_menu">
+		<div>
+			<div data-url="./menuSide1.html">
+				<img src="./images/main_menu100.png" alt="사업개요">
+				<div>사 업 개 요</div>
+			</div>
+			<div data-url="./menuSide2.html">
+				<img src="./images/main_menu200.png" alt="입지환경">
+				<div>입 지 환 경</div>
+			</div>
+			<div data-url="./menuSide3.html">
+				<img src="./images/main_menu300.png" alt="배치도">
+				<div>배 치 도</div>
+			</div>
+		</div>
+		<div>
+			<div data-url="./menuSide4.html">
+				<img src="./images/main_menu400.png" alt="타입안내">
+				<div>타 입 안 내</div>
+			</div>
+			<div data-url="./menuSide5.html">
+				<img src="./images/main_menu400.png" alt="상품특화">
+				<div>상 품 특 화</div>
+			</div>
+			<div data-url="./menuSide6.html">
+				<img src="./images/main_menu600.png" alt="개발환경">
+				<div>개 발 환 경</div>
 			</div>
 		</div>
 	</div>
 
+	<!-- 메인 하단(방문신청예약) 영역 -->
+	<div class="main_foot">
+		<div> ⬇ 방 문 신 청 예 약 하 기 ⬇ </div>
+		
+		<!-- 방문 신청 예약폼 영역 -->
+		<div>
+			<div>
+				<label for="name" id="nameInput">이름</label>
+				<input type="text" id="name" placeholder="이름을 입력하세요">
+			</div>
 
-	<!-- 메인 컨텐츠 -->
-	<div id="main">
-		<div class="inner">
-			<div class="thumbnails">
+			<div>
+				<label for="phone" id="phoneInput">전화번호</label>
+				<input type="tel" id="phone" placeholder="전화번호를 입력하세요">
+			</div>
 
-				<div class="business-overview">
-
-					<div class="gallery">
-
-						<div class="gallery_item">
-							<a href="./menuSideOne.html">
-								<img src="./images/menuSideOne-2.png" alt="사업개요" />
-							</a>
-							<div class="gallery-text">사 업 개 요</div>
-						</div>
-						<div class="gallery_item">
-							<a href="./menuSideTwo.html">
-								<img src="./images/menuSideTwo-1.png" alt="입지환경" />
-							</a>
-							<div class="gallery-text">입 지 환 경</div>
-						</div>
-						<div class="gallery_item">
-							<a href="./menuSideThree.html">
-								<img src="./images/menuSideThree-1.png" alt="배치도" />
-							</a>
-							<div class="gallery-text">배 치 도</div>
-						</div>
-						<div class="gallery_item">
-							<a href="./menuSideFour.html">
-								<img src="./images/menuSideFour-1.png" alt="타입안내" />
-							</a>
-							<div class="gallery-text">타 입 안 내</div>
-						</div>
-						<div class="gallery_item">
-							<a href="./menuSideFive.html">
-								<img src="./images/menuSideFive-1.png" alt="상품특화" />
-							</a>
-							<div class="gallery-text">상 품 특 화</div>
-						</div>
-						<div class="gallery_item">
-							<a href="./menuSideSix.html">
-								<img src="./images/menuSideSix-1.png" alt="개발환경" />
-							</a>
-							<div class="gallery-text">개 발 환 경</div>
-						</div>
-					</div>
+			<!-- 개인정보 수집 동의 -->
+			<div class="privacy_agree">
+				<div>
+					<input type="checkbox" id="privacy_check">
+					<label for="privacy_check">개인정보 수집·이용에 동의합니다.</label>
+					<a href="#" id="open_privacy">[자세히 보기]</a>
 				</div>
 			</div>
+
+			<button type="button" class="reserve_btn">예 약 하 기</button>
 		</div>
 	</div>
 
-	<!-- 하단 배너 (상담신청) -->
-	<a id="sideBannerOne">
-		<div id="sideBannerOneDiv">▼&nbsp; 방 문 신 청&nbsp;예 약 하 기 &nbsp;▼</div>
-	</a>
-
-	<!-- 개인정보 동의 모달 -->
-	<div id="sideBannerContainer">
-		<div class="form-group">
-			<label for="name">이름</label>
-			<input type="text" id="name" placeholder="고객님의 이름을 입력하세요">
-		</div>
-		<div class="form-group">
-			<label for="phone">연락처</label>
-			<input type="tel" id="phone" placeholder="연락처를 입력하세요">
-		</div>
-		<div class="consent">
-			<input type="checkbox" id="agree">
-			<label for="agree">개인정보 수집 및 사용 동의 <a href="#" id="viewDetails">[자세히보기]</a></label>
-		</div>
-		<div id="submitButton">신 청 하 기</div>
-		<div id="sideBannerTwo"></div> <!-- 광역위치도 -->
-		<div id="adBanner">
-			<div>상봉역 7호선</div>
-			<div> | </div>
-			<div>경춘선</div>
-			<div> | </div>
-			<div>경의중앙선</div>
-			<div> | </div>
-			<div>KTX</div>
-			<div> | </div>
-			<div>GTX-B노선(예정)</div>
+	<!-- 개인정보 수집·이용 모달 -->
+	<div id="privacy_modal" class="modal">
+		<div class="modal_content">
+			<span class="close">&times;</span>
+			<h2>개인정보 수집·이용 안내</h2>
+			<p>본 사이트는 방문 예약을 위해 최소한의 개인정보를 수집·이용합니다.</p>
+			<ul>
+				<li>수집 항목: 이름, 전화번호</li>
+				<li>이용 목적: 방문 예약 및 안내</li>
+				<li>보유 기간: 예약 후 3일이내 파기</li>
+			</ul>
+			<p>자세한 내용은 관리자에게 문의해 주세요.</p>
 		</div>
 	</div>
 
-	<!-- 모달 -->
-	<div class="modal" id="privacyModal">
-		<div class="modal-content">
-			<h2>개인정보 수집 및 사용</h2>
-			<p>고객님의 개인정보는 상담 신청을 위해 사용되며, <br>다른 용도로는 사용되지 않습니다.</p>
-			<button class="modal-close">닫기</button>
-		</div>
+	<!-- 메인 하단 이미지(광역위치도) 영역 -->
+	<div class="main_foot_img">
+		<img src="./images/main_foot_img.png" alt="광역위치도" id="mapImg">
+		<div>클릭 시 '네이버 지도' 연결 됩니다.</div>
 	</div>
 
-	<!-- Footer -->
-	<footer id="footer">
-		<div class="inner"></div>
-	</footer>
-
-	<div class="copyright">
-		Site made with: <a href="https://templated.co/">Templated</a>.
-		<p>Designed by <a href="https://templated.co/">Templated</a> and released under the Creative Commons License.
-		</p>
-
+	<!-- 메인 하단 글씨 영역 -->
+	<div class="main_foot_text">
+		<div>실내골프장 | 어린이집 | 둘레길 | 피트니스 | 서틀버스</div>
 	</div>
 
-	<div id="telAndSms">
-		<div>
-			<a href="tel:15332042" class="tel">
-				<i class="fas fa-phone-alt"></i> 전화
-			</a>
-		</div>
-		<div>
-			<a href="sms:01052054651" class="sms">
-				<i class="fas fa-comment-dots"></i> 문자
-			</a>
-		</div>
+	<!-- 하단 푸터(정보) 영역 -->
+	<div class="foot_info">
+		<div>Seoul Deokgye Station Hanshin The Hue Forest Ad.</div>
+		<div>[ Site made by Chan Young ]</div>
+		<div>Designed by Chan Young and released under the Creative Commons License.</div>
 	</div>
 
-	<!-- URL 모음 -->
-	<!-- <div id="buttonSection">
-		<div class="button-container">
-			<button onclick="location.href='./menuSideOne.html'">사업개요</button>
-			<button onclick="location.href='./menuSideTwo.html'">입지환경</button>
-			<button onclick="location.href='./menuSideSeven.html'">관심고객등록</button>
-		</div>
-	</div> -->
+	<!-- 하단 푸터 전화/문자 영역 -->
+	<div class="foot_callMsg">
+		<div id="call2"><span><i class="fas fa-phone-alt"></i>&nbsp;</span>&nbsp;전화</div>
+		<div id="msg"><span><i class="fas fa-comment-dots"></i>&nbsp;</span>&nbsp;문자</div>
+	</div>
 
-	<!-- Scripts -->
-	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-	<script>
-		// 반짝이는 점 생성
-		const createSparkle = () => {
-			const sparkle = document.createElement('div');
-			sparkle.className = 'sparkle';
+	<script src="./assets/js/main.js"></script>
 
-			// 화면 랜덤 위치 지정
-			sparkle.style.top = Math.random() * 100 + 'vh';
-			sparkle.style.left = Math.random() * 100 + 'vw';
-
-			// 랜덤 크기와 애니메이션 속도
-			const size = Math.random() * 3 + 1; // 1px ~ 4px
-			sparkle.style.width = size + 'px';
-			sparkle.style.height = size + 'px';
-			sparkle.style.animationDuration = Math.random() * 3 + 2 + 's'; // 2초 ~ 5초
-
-			document.body.appendChild(sparkle);
-
-			// 일정 시간 후 제거
-			setTimeout(() => sparkle.remove(), 5000);
-		};
-
-		// 반짝이는 점을 주기적으로 생성
-		setInterval(createSparkle, 200); // 0.2초마다 새로운 점 생성
-
-		// 메뉴 아이콘 클릭 시 메뉴 열기
-		document.getElementById("menuButton").addEventListener("click", function () {
-			document.getElementById("sideMenu").style.left = "0"; // 메뉴가 나타나도록
-			document.getElementById("overlay").style.display = "block"; // 오버레이 배경 표시
-		});
-
-		// 메뉴 닫기 버튼 클릭 시 메뉴 숨기기
-		document.getElementById("closeMenu").addEventListener("click", function () {
-			document.getElementById("sideMenu").style.left = "-250px"; // 메뉴가 숨겨지도록
-			document.getElementById("overlay").style.display = "none"; // 오버레이 배경 숨기기
-		});
-
-		// 오버레이 배경 클릭 시 메뉴 닫기
-		document.getElementById("overlay").addEventListener("click", function () {
-			document.getElementById("sideMenu").style.left = "-250px"; // 메뉴 숨기기
-			document.getElementById("overlay").style.display = "none"; // 오버레이 배경 숨기기
-		});
-
-		const submitButton = document.getElementById('submitButton');
-		const nameInput = document.getElementById('name');
-		const phoneInput = document.getElementById('phone');
-		const agreeCheckbox = document.getElementById('agree');
-		const modal = document.getElementById('privacyModal');
-		const modalClose = document.querySelector('.modal-close');
-		const viewDetails = document.getElementById('viewDetails');
-
-		// 신청 버튼 클릭 이벤트
-		submitButton.addEventListener('click', () => {
-			const name = nameInput.value.trim();
-			const phone = phoneInput.value.trim();
-
-			if (!name || !phone) {
-				alert('이름과 연락처를 입력해주세요.');
-				return;
-			}
-
-			if (!agreeCheckbox.checked) {
-				alert('개인정보 수집 및 사용에 동의해주세요.');
-				return;
-			}
-
-			// SMS 링크 생성 및 이동
-			const smsLink = `sms:01052054651?body=상담을%20신청합니다.%20[이름:%20${encodeURIComponent(name)}%20연락처:%20${encodeURIComponent(phone)}]`;
-			window.location.href = smsLink;
-		});
-
-		// 모달 열기
-		viewDetails.addEventListener('click', (e) => {
-			e.preventDefault();
-			modal.style.display = 'flex';
-		});
-
-		// 모달 닫기
-		modalClose.addEventListener('click', () => {
-			modal.style.display = 'none';
-		});
-
-		// 모달 외부 클릭 시 닫기
-		modal.addEventListener('click', (e) => {
-			if (e.target === modal) {
-				modal.style.display = 'none';
-			}
-		});
-
-		// 모든 gallery_item 요소에 대해 처리
-		document.querySelectorAll('.gallery_item').forEach(function (item) {
-			// 해당 아이템 안의 <a> 태그에서 href 값을 가져옴
-			var link = item.querySelector('a').getAttribute('href');
-			var textEl = item.querySelector('.gallery-text');
-
-			// 텍스트 영역에 클릭 이벤트 추가
-			textEl.style.cursor = 'pointer'; // 클릭 가능한 영역임을 표시
-			textEl.addEventListener('click', function () {
-				window.location.href = link;
-			});
-		});
-
-	</script>
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/main.js"></script>
 </body>
 
 </html>

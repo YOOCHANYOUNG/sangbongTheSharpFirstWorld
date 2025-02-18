@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="naver-site-verification" content="af1e0601a0ef22b8d686b107fc276d253bfd6fec" />
+    <meta name="description" content="덕계역 한신더휴 포레스트">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="덕계역 한신더휴 포레스트">
+    <meta property="og:description" content="덕계역 한신더휴 포레스트">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>한신더휴 포레스트-입지환경</title>
+
+    <style>
+        /* 기본 스타일 설정 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: calc(100vh - 80px - 60px);
+        }
+
+        /* 헤더 스타일 */
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 15px;
+            background-color: whitesmoke;
+            color: #333;
+            position: relative;
+            height: auto;
+            gap: 1px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #2d4a2d;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .top_logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            background: #eeffe0;
+        }
+
+        /* 로고이미지 크기 */
+        #logoImage {
+            width: 330px;
+            height: 85px;
+            border-radius: 10px;
+            border: 4px solid #2d4a2d;
+        }
+
+        @media (max-width: 768px) {
+            #logoImage {
+                width: 250px;
+                height: 65px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #logoImage {
+                width: 200px;
+                height: 55px;
+            }
+        }
+
+        /* 사이드메뉴 버튼영역 */
+        #sideMenuArea {
+            display: flex;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #sideMenuIcon {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            font-size: 40px;
+            font-weight: bold;
+            color: black;
+            background-color: whitesmoke;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        @media (max-width: 768px) {
+            #sideMenuIcon {
+                font-size: 30px;
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #sideMenuIcon {
+                font-size: 25px;
+                padding: 6px;
+            }
+        }
+
+
+        /* 오른쪽 사이드 메뉴 스타일 */
+        .side-menu {
+            position: fixed;
+            top: 0;
+            right: -250px;
+            width: 250px;
+            height: 100%;
+            background: linear-gradient(135deg, #d7f9b1, #e8f5e9);
+            color: #fff;
+            transition: right 0.3s ease-in-out;
+            z-index: 10000;
+            box-shadow: -4px 0 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 사이드 메뉴가 열렸을 때 */
+        .side-menu.open {
+            right: 0;
+        }
+
+        .side-menu-content {
+            padding: 20px;
+        }
+
+        .side-menu-content ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 60px;
+        }
+
+        .side-menu-content ul li {
+            margin: 15px 0;
+            font-size: 20px;
+            transition: background-color 0.2s, transform 0.2s;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .side-menu-content ul li:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateX(-5px);
+        }
+
+        .side-menu-content ul li a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* 오버레이 스타일 */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            visibility: hidden;
+            transition: visibility 0.3s ease-in-out;
+            z-index: 5000;
+        }
+
+        /* 갤러리 스타일 */
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+
+        .gallery img {
+            width: 90%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* 푸터 스타일 */
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 3px;
+            margin-top: 7.5px;
+            color: gray;
+            font-size: 15px;
+            gap: 5px;
+            margin-bottom: 40px;
+        }
+
+        .footer p {
+            margin: 10px 0;
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            .gallery {
+                padding: 15px;
+                margin: 15px;
+            }
+
+            .gallery img {
+                width: 100%;
+                max-width: none;
+            }
+
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .header p {
+                font-size: 1rem;
+            }
+
+            .back-button {
+                width: 200px;
+                padding: 12px 25px;
+                font-size: 1.1rem;
+                margin: 15px auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.6rem;
+                margin-top: 7.5px;
+            }
+
+            .header p {
+                font-size: 0.9rem;
+            }
+
+            .footer p {
+                font-size: 0.9rem;
+            }
+
+            .back-button {
+                width: 100%;
+                padding: 12px;
+                font-size: 1.2rem;
+                margin: 15px 0;
+            }
+        }
+
+        /* Footer 전체 영역 스타일 */
+        .footers {
+            background: #2d4a2d;
+            padding: 20px;
+            text-align: center;
+            color: #ECF0F1;
+            border-top: 3px solid #ECF0F1;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: -25px;
+        }
+
+        /* 뒤로가기 버튼 스타일 */
+        .footers .back-button {
+            background-color: #E74C3C;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .footers .back-button:hover {
+            background-color: #C0392B;
+        }
+
+        /* 하단 텍스트 스타일 */
+        .footers p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* --------------------- 모바일 반응형 적용 (최대 768px) --------------------- */
+        @media screen and (max-width: 768px) {
+            .footers {
+                padding: 15px;
+                /* 모바일에서는 전체 패딩을 약간 줄임 */
+            }
+
+            .footers .back-button {
+                padding: 10px 20px;
+                /* 버튼 패딩 및 폰트 크기를 축소 */
+                font-size: 14px;
+            }
+
+            .footers p {
+                font-size: 12px;
+                /* 텍스트 폰트 크기 축소 */
+            }
+        }
+
+        /* --------------------- 태블릿 반응형 적용 (769px ~ 1024px) --------------------- */
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            .footers {
+                padding: 18px;
+                /* 태블릿에 맞춰 패딩 약간 조정 */
+            }
+
+            .footers .back-button {
+                padding: 11px 22px;
+                /* 태블릿용 버튼 패딩 및 폰트 크기 조절 */
+                font-size: 15px;
+            }
+
+            .footers p {
+                font-size: 13px;
+                /* 텍스트 폰트 크기 약간 조정 */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 상단 로고 영역 -->
+    <div class="top_logo">
+        <div id="sideMenuArea">
+            <div id="sideMenuIcon">≣</div>
+        </div>
+    </div>
+
+    <!-- 사이드메뉴 -->
+    <div id="sideMenu" class="side-menu">
+        <div class="side-menu-content">
+            <ul>
+                <li><a href="./index.html">홈</a></li>
+				<li><a href="./menuSide1.html">사업개요</a></li>
+				<li><a href="./menuSide2.html">입지환경</a></li>
+				<li><a href="./menuSide3.html">배치도</a></li>
+				<li><a href="./menuSide4.html">타입안내</a></li>
+				<li><a href="./menuSide5.html">상품특화</a></li>
+				<li><a href="./menuSide6.html">개발환경</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 배경 클릭 시 메뉴 닫기 (중복된 overlay 제거) -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- 헤더 -->
+    <div class="header">
+        <div>
+            <img src="./images/top_logo.png" alt="로고" id="logoImage">
+        </div>
+        <h1>[ 입 지 환 경 ]</h1>
+    </div>
+
+    <!-- 갤러리 -->
+    <div class="gallery">
+        <img src="./images/main_menu200.png" alt="입지환경 추가 이미지 1">
+    </div>
+
+    <!-- 하단 푸터 -->
+    <div class="footer">
+        <div>Seoul Deokgye Station Hanshin The Hue Forest Ad.</div>
+        <div>[ Site made by Chan Young ]</div>
+        <div>Designed by Chan Young and released under the Creative Commons License.</div>
+    </div>
+
+    <!-- 뒤로가기 버튼 -->
+    <div class="footers">
+        <button class="back-button" onclick="window.history.back();">뒤로 가기</button>
+        <p>&copy; 서울 덕계역 한신더휴 포레스트. All Rights Reserved.</p>
+    </div>
+
+    <script>
+        // 사이드메뉴 열기/닫기 기능
+        const sideMenuIcon = document.getElementById('sideMenuIcon');
+        const sideMenu = document.getElementById('sideMenu');
+        const overlay = document.getElementById('overlay');
+
+        // 메뉴 아이콘 클릭 시 토글
+        sideMenuIcon.addEventListener('click', (event) => {
+            event.stopPropagation();
+            sideMenu.classList.toggle('open');
+            overlay.style.visibility = sideMenu.classList.contains('open') ? 'visible' : 'hidden';
+        });
+
+        // 사이드메뉴 내부 클릭 시 이벤트 전파 차단
+        sideMenu.addEventListener('click', (event) => {
+            event.stopPropagation();
+        });
+
+        // 문서 전체 클릭 시 메뉴 닫기
+        document.addEventListener('click', () => {
+            if (sideMenu.classList.contains('open')) {
+                sideMenu.classList.remove('open');
+                overlay.style.visibility = 'hidden';
+            }
+        });
+
+        // 오버레이 클릭 시에도 메뉴 닫기
+        overlay.addEventListener('click', () => {
+            sideMenu.classList.remove('open');
+            overlay.style.visibility = 'hidden';
+        });
+
+        // 상단 메인 로고 클릭시 홈으로 이동
+        // DOMContentLoaded 이벤트로 DOM 요소가 모두 로드된 후 실행되도록 합니다.
+        document.addEventListener('DOMContentLoaded', function () {
+            // id가 "logoImage"인 이미지 요소를 선택합니다.
+            const logoImage = document.getElementById('logoImage');
+
+            // 이미지에 마우스 커서를 pointer로 변경하여 클릭 가능한 UI임을 표시합니다.
+            logoImage.style.cursor = 'pointer';
+
+            // 이미지에 클릭 이벤트 리스너를 추가합니다.
+            logoImage.addEventListener('click', function () {
+                // 원하는 링크로 이동합니다. 아래 URL을 원하는 링크로 변경하세요.
+                window.location.href = './index.html';
+            });
+        });
+    </script>
+</body>
+
+</html>
