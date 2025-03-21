@@ -527,6 +527,7 @@ body{
         flex-direction: column;
         width: 92%;
         /* margin-top: 70px; */
+        margin-bottom: 70px;
     }
 
     .main_ment > :nth-child(n) {
