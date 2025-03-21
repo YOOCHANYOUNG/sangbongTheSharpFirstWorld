@@ -537,7 +537,7 @@ body{
     .main_ment > :nth-child(1) {
         width: 100%; /* 가로 너비를 100%로 조정 */
 		height: 40%;
-        margin-top: -95px;
+        /* margin-top: -95px; */
         font-size: 1.5em;
     }
 
@@ -628,7 +628,7 @@ body{
     }
 
     .main_menu > :nth-child(n) {
-        gap: 50px;
+        gap: 30px;
         margin: 270px 0;
     }
 
@@ -654,7 +654,7 @@ body{
     /* 화면 크기가 600px 이하일 때 메뉴 아이템 세로 배치 */
     .main_menu > :nth-child(n) {
         flex-direction: column; /* 세로로 배치 */
-        gap: 70px; /* 간격 줄이기 */
+        gap: 20px; /* 간격 줄이기 */
     }
 
     .main_menu > :nth-child(n) > :nth-child(n) {
