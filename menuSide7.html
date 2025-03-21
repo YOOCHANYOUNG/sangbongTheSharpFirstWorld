@@ -7,16 +7,16 @@
 
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="naver-site-verification" content="af1e0601a0ef22b8d686b107fc276d253bfd6fec" />
-    <meta name="description" content="덕계역 한신더휴 포레스트">
+    <meta name="description" content="상봉 더샵 퍼스트월드">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="덕계역 한신더휴 포레스트">
-    <meta property="og:description" content="덕계역 한신더휴 포레스트">
+    <meta property="og:title" content="상봉 더샵 퍼스트월드">
+    <meta property="og:description" content="덕상봉 더샵 퍼스트월드">
     <meta property="og:image" content="https://seouldeokgyestation.netlify.app/main_img_main.png">
     <meta property="og:url" content="https://seouldeokgyestation.netlify.app/">
 
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <title>한신더휴 포레스트-개발환경</title>
+    <title>상봉 더샵 퍼스트월드-개발환경</title>
 
     <style>
         /* 기본 스타일 설정 */
@@ -24,8 +24,10 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff;
-            color: #333;
+            background-color: #1a1a1a;
+            /* 어두운 배경 */
+            color: #ccc;
+            /* 부드러운 회색 텍스트 */
             display: flex;
             flex-direction: column;
             min-height: calc(100vh - 80px - 60px);
@@ -39,8 +41,10 @@
             flex-direction: column;
             text-align: center;
             padding: 15px;
-            background-color: whitesmoke;
-            color: #333;
+            background-color: #333;
+            /* 어두운 회색 배경 */
+            color: #fff;
+            /* 흰색 텍스트 */
             position: relative;
             height: auto;
             gap: 1px;
@@ -49,7 +53,7 @@
         .header h1 {
             margin: 0;
             font-size: 2.5rem;
-            color: #2d4a2d;
+            color: #fff;
         }
 
         .header p {
@@ -70,7 +74,7 @@
             width: 330px;
             height: 85px;
             border-radius: 10px;
-            border: 4px solid #2d4a2d;
+            /* border: 4px solid #2d4a2d; */
         }
 
         @media (max-width: 768px) {
@@ -102,8 +106,8 @@
             right: 15px;
             font-size: 40px;
             font-weight: bold;
-            color: black;
-            background-color: whitesmoke;
+            color: white;
+            background-color: 1a1a1a;
             padding: 10px;
             border-radius: 5px;
             cursor: pointer;
@@ -132,11 +136,12 @@
             right: -250px;
             width: 250px;
             height: 100%;
-            background: linear-gradient(135deg, #d7f9b1, #e8f5e9);
+            background: linear-gradient(135deg, #333, #444);
+            /* 어두운 그라데이션 배경 */
             color: #fff;
             transition: right 0.3s ease-in-out;
             z-index: 10000;
-            box-shadow: -4px 0 8px rgba(0, 0, 0, 0.3);
+            box-shadow: -4px 0 8px rgba(0, 0, 0, 0.5);
         }
 
         /* 사이드 메뉴가 열렸을 때 */
@@ -165,12 +170,14 @@
         }
 
         .side-menu-content ul li:hover {
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.1);
+            /* 밝은 회색 호버 효과 */
             transform: translateX(-5px);
         }
 
         .side-menu-content ul li a {
-            color: #333;
+            color: #ccc;
+            /* 텍스트 색상 회색 */
             text-decoration: none;
             display: block;
         }
@@ -182,7 +189,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.7);
+            /* 어두운 오버레이 */
             visibility: hidden;
             transition: visibility 0.3s ease-in-out;
             z-index: 5000;
@@ -281,12 +289,33 @@
             }
         }
 
+        /* 푸터 스타일 */
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 3px;
+            margin-top: 7.5px;
+            color: gray;
+            font-size: 15px;
+            gap: 5px;
+            margin-bottom: 40px;
+        }
+
+        .footer p {
+            margin: 10px 0;
+        }
+
         /* Footer 전체 영역 스타일 */
         .footers {
-            background: #2d4a2d;
+            background: #2c2c2c;
+            /* 어두운 배경 */
             padding: 20px;
             text-align: center;
             color: #ECF0F1;
+            /* 밝은 글자 색 */
             border-top: 3px solid #ECF0F1;
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
             margin-top: -25px;
@@ -294,7 +323,8 @@
 
         /* 뒤로가기 버튼 스타일 */
         .footers .back-button {
-            background-color: #E74C3C;
+            background-color: #e74c3c;
+            /* 고급스러운 빨간색 */
             color: #fff;
             border: none;
             padding: 12px 24px;
@@ -306,7 +336,8 @@
         }
 
         .footers .back-button:hover {
-            background-color: #C0392B;
+            background-color: #c0392b;
+            /* 어두운 빨간색 */
         }
 
         /* 하단 텍스트 스타일 */
@@ -316,41 +347,34 @@
             line-height: 1.5;
         }
 
-        /* --------------------- 모바일 반응형 적용 (최대 768px) --------------------- */
-        @media screen and (max-width: 768px) {
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
             .footers {
                 padding: 15px;
-                /* 모바일에서는 전체 패딩을 약간 줄임 */
             }
 
             .footers .back-button {
                 padding: 10px 20px;
-                /* 버튼 패딩 및 폰트 크기를 축소 */
                 font-size: 14px;
             }
 
             .footers p {
                 font-size: 12px;
-                /* 텍스트 폰트 크기 축소 */
             }
         }
 
-        /* --------------------- 태블릿 반응형 적용 (769px ~ 1024px) --------------------- */
-        @media screen and (min-width: 769px) and (max-width: 1024px) {
+        @media (min-width: 769px) and (max-width: 1024px) {
             .footers {
                 padding: 18px;
-                /* 태블릿에 맞춰 패딩 약간 조정 */
             }
 
             .footers .back-button {
                 padding: 11px 22px;
-                /* 태블릿용 버튼 패딩 및 폰트 크기 조절 */
                 font-size: 15px;
             }
 
             .footers p {
                 font-size: 13px;
-                /* 텍스트 폰트 크기 약간 조정 */
             }
         }
 
@@ -399,7 +423,7 @@
         /* 등록 버튼 스타일 */
         #submitButton {
             text-align: center;
-            background-color: #1f4d1f;
+            background-color: #e74c3c;
             color: #fff;
             padding: 12px;
             border-radius: 8px;
@@ -482,15 +506,15 @@
 
     <!-- 하단 푸터 -->
     <div class="footer">
-        <div>Seoul Deokgye Station Hanshin The Hue Forest Ad.</div>
-        <div>[ Site made by Chan Young ]</div>
-        <div>Designed by Chan Young and released under the Creative Commons License.</div>
+		<div>Seoul Sangbong The Sharp First World Ad.</div>
+		<div>[ Site made by Chan Young ]</div>
+		<div>Designed by Chan Young and released under the Creative Commons License.</div>
     </div>
 
     <!-- 뒤로가기 버튼 -->
     <div class="footers">
         <button class="back-button" onclick="window.history.back();">뒤로 가기</button>
-        <p>&copy; 서울 덕계역 한신더휴 포레스트. All Rights Reserved.</p>
+        <p>&copy; 상봉 더샵 퍼스트월드. All Rights Reserved.</p>
     </div>
 
     <script>

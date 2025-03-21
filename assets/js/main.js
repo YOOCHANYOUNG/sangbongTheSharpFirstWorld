@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* 지도이동 */
 document.querySelector("#mapImg").addEventListener("click", function () {
-    const mapUrl = "https://map.naver.com/v5/search/경기도 양주시 덕계동 707-1번지"; // 네이버 지도 예시
+    const mapUrl = "https://map.naver.com/v5/search/서울특별시 중랑구 상봉로 105-1"; // 네이버 지도 예시
     window.open(mapUrl, "_blank"); // 새 창에서 지도 열기
 });
 
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         const phoneNumber = "01052054651"; // 문자 받을 번호
-        const message = encodeURIComponent("안녕하세요! 덕계역 예약을 신청합니다."); // 전송할 메시지
+        const message = encodeURIComponent("안녕하세요! 상봉 더샵 퍼스트월드 예약을 신청합니다."); // 전송할 메시지
 
         // 문자 앱 실행 (사용자 확인 필요)
         window.location.href = `sms:${phoneNumber}?body=${message}`;
@@ -58,21 +58,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* 하단 전화, 문자 버튼 */
 document.getElementById("call2").addEventListener("click", function () {
-    const phoneNumber = "15332042"; // 전화번호
+    const phoneNumber = "01052054651"; // 전화번호
     window.location.href = `tel:${phoneNumber}`; // 전화 앱 실행
 });
 
 document.getElementById("msg").addEventListener("click", function () {
     const phoneNumber = "01052054651"; // 문자 받을 번호
-    const message = encodeURIComponent("안녕하세요! 덕계역 예약을 신청합니다."); // 전송할 메시지
+    const message = encodeURIComponent("안녕하세요! 상봉 더샵 퍼스트월드 예약을 신청합니다."); // 전송할 메시지
     window.location.href = `sms:${phoneNumber}?body=${message}`; // 문자 앱 실행
 });
 
 /* 상단 전화 영역 클릭 */
-document.getElementById("call1").addEventListener("click", function () {
-    const phoneNumber = "15332042"; // 전화번호 (숫자만 입력)
-    window.location.href = `tel:${phoneNumber}`; // 전화 앱 실행
-});
+// document.getElementById("call1").addEventListener("click", function () {
+//     const phoneNumber = "15332042"; // 전화번호 (숫자만 입력)
+//     window.location.href = `tel:${phoneNumber}`; // 전화 앱 실행
+// });
 
 
 
