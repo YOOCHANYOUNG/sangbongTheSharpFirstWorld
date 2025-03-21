@@ -655,7 +655,7 @@ body{
     /* 화면 크기가 600px 이하일 때 메뉴 아이템 세로 배치 */
     .main_menu > :nth-child(n) {
         flex-direction: column; /* 세로로 배치 */
-        gap: 10px; /* 간격 줄이기 */
+        gap: 55px; /* 간격 줄이기 */
     }
 
     .main_menu > :nth-child(n) > :nth-child(n) {
