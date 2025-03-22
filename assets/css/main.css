@@ -650,15 +650,15 @@ body{
 @media (max-width: 600px) {
     .main_menu {
         height: auto;
-		margin-top: -165px;
+		margin-top: -190px;
     }
     /* 화면 크기가 600px 이하일 때 메뉴 아이템 세로 배치 */
     .main_menu > :nth-child(n) {
         flex-direction: column; /* 세로로 배치 */
-        gap: 25px; /* 간격 줄이기 */
+        gap: 10px; /* 간격 줄이기 */
     }
     .main_menu > :nth-child(1) {
-        margin-bottom: 110px;
+        margin-bottom: 70px;
     }
     .main_menu > :nth-child(2) {
         /* gap: 30px; */
@@ -793,6 +793,9 @@ body{
 
 /* 반응형 스타일 - 화면 크기가 600px 이하일 때 */
 @media (max-width: 600px) {
+    .main_foot {
+        margin-top: -110px;
+    }
     .main_foot > :nth-child(1) {
 		width: 95%;
         font-size: 26px; /* 더 작은 화면에서 폰트 크기 더 줄이기 */
