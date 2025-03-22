@@ -629,7 +629,7 @@ body{
     }
 
     .main_menu > :nth-child(n) {
-        gap: 30px;
+        gap: 25px;
         margin: 270px 0;
     }
 
@@ -650,12 +650,18 @@ body{
 @media (max-width: 600px) {
     .main_menu {
         height: auto;
-		margin-top: -80px;
+		margin-top: -165px;
     }
     /* 화면 크기가 600px 이하일 때 메뉴 아이템 세로 배치 */
     .main_menu > :nth-child(n) {
         flex-direction: column; /* 세로로 배치 */
-        gap: 80px; /* 간격 줄이기 */
+        gap: 25px; /* 간격 줄이기 */
+    }
+    .main_menu > :nth-child(1) {
+        margin-bottom: 110px;
+    }
+    .main_menu > :nth-child(2) {
+        /* gap: 30px; */
     }
 
     .main_menu > :nth-child(n) > :nth-child(n) {
