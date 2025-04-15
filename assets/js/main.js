@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* 하단 전화, 문자 버튼 */
 document.getElementById("call2").addEventListener("click", function () {
-    const phoneNumber = "01052054651"; // 전화번호
+    const phoneNumber = "15332042"; // 전화번호
     window.location.href = `tel:${phoneNumber}`; // 전화 앱 실행
 });
 
