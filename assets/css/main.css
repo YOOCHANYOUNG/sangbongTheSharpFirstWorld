@@ -479,7 +479,7 @@ body{
 .main_ment > :nth-child(1) > :nth-child(1) {
     color: #ffe066; /* 밝은 골드 */
     font-weight: bold;
-    text-shadow: 2px 2px 6px rgba(255, 204, 0, 1), 0 0 12px rgba(255, 255, 255, 0.8); /* 빛나는 효과 */
+    /* text-shadow: 2px 2px 6px rgba(255, 204, 0, 1), 0 0 12px rgba(255, 255, 255, 0.8); 빛나는 효과 */
 }
 .main_ment > :nth-child(1) > :nth-child(2) {
     color: #ffe066; /* 밝은 골드 */
